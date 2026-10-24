@@ -2,7 +2,7 @@
 
 The Wild Magic 3.8 library by David Eberly, Geometric Tools, Inc., as originally released in January 2006, unmodified. Geometric Tools no longer distributes Wild Magic 3; this copy exists so that [faf-re](https://github.com/Draiget/faf-re) can fetch it as a dependency.
 
-Everything except this `README.md` and `.gitattributes` is the original release, byte for byte. faf-re's own changes live in that repository as patches (`dependencies/patches/wildmagic3p8_faf_*.patch`) and are applied at build time.
+Everything except this `README.md`, `.gitattributes` and `.github/CODEOWNERS` is the original release, byte for byte. faf-re's own changes live in that repository as patches (`dependencies/patches/wildmagic3p8_faf_*.patch`) and are applied at build time.
 
 ## License
 
