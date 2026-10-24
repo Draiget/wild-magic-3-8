@@ -1,0 +1,17 @@
+build :
+	cd BinaryOperations   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BinaryOperations
+	cd ConformalMapping   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ConformalMapping
+	cd ExtractLevelCubes  ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtractLevelCubes
+	cd ExtractLevelCurves ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtractLevelCurves
+	cd ExtractLevelTetra  ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtractLevelTetra
+	cd ImViewer           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ImViewer
+	cd VolumeRenderer     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=VolumeRenderer
+
+clean :
+	cd BinaryOperations   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BinaryOperations
+	cd ConformalMapping   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ConformalMapping
+	cd ExtractLevelCubes  ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtractLevelCubes
+	cd ExtractLevelCurves ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtractLevelCurves
+	cd ExtractLevelTetra  ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtractLevelTetra
+	cd ImViewer           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ImViewer
+	cd VolumeRenderer     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=VolumeRenderer

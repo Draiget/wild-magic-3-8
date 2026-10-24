@@ -1,0 +1,27 @@
+build :
+	@mkdir -p Include
+	@mkdir -p Library/$(CONFIG)
+	cd Foundation               && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd Renderers/OpenGLRenderer && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd Applications             && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleGraphics           && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd SamplePhysics            && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleShaders            && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleImagics            && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleMiscellaneous      && make -f makefile.lnx CONFIG=$(CONFIG)
+	cd Tools                    && make -f makefile.lnx CONFIG=$(CONFIG)
+
+clean :
+	cd Foundation               && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd Renderers/OpenGLRenderer && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd Applications             && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleGraphics           && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd SamplePhysics            && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleShaders            && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleImagics            && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd SampleMiscellaneous      && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	cd Tools                    && make clean -f makefile.lnx CONFIG=$(CONFIG)
+	rm -f Include/*.*
+	rm -f Library/$(CONFIG)/*.*
+	@rmdir Include
+	@rmdir Library/$(CONFIG)

@@ -1,0 +1,7 @@
+build :
+	cd ScenePrinter ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ScenePrinter
+	cd SimpleViewer ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SimpleViewer
+
+clean :
+	cd ScenePrinter ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ScenePrinter
+	cd SimpleViewer ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SimpleViewer

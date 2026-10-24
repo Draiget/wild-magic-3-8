@@ -1,0 +1,39 @@
+TARGET := Wm3Application
+CC := /mingw/bin/g++
+CFLAGS := $(CFLAGS) -c -DMINGW
+AR := /mingw/bin/ar
+ARFLAGS := rs
+
+ifeq (,$(findstring Debug,$(CONFIG)))
+    CFLAGS += -O2 -DNDEBUG
+else
+    CFLAGS += -g -D_DEBUG
+endif
+
+ifeq (,$(findstring Memory,$(CONFIG)))
+else
+    CFLAGS += -DWM3_MEMORY_MANAGER
+endif
+
+INCPATH := -I . -I /mingw/include -I ../Include
+INCDIR := ../Include
+INC := Wm3ApplicationPCH.h Wm3Application.h Wm3Application.mcr Wm3Command.h \
+       Wm3ConsoleApplication.h Wm3WindowApplication.inl \
+       $(wildcard Wm3WindowApplication*.h)
+SRC := Wm3Application.cpp Wm3Command.cpp Wm3ConsoleApplication.cpp \
+       $(wildcard Wm3WindowApplication*.cpp) Wm3WglApplication.cpp
+OBJ := $(SRC:%.cpp=$(CONFIG)/%.o)
+LIB := ../Library/$(CONFIG)/libWm3WglApplication.a
+
+$(TARGET) : $(OBJ)
+	$(AR) $(ARFLAGS) $(LIB) $(OBJ)
+	cp -fp $(INC) $(INCDIR) 
+
+$(CONFIG)/%.o : %.cpp
+	@mkdir -p $(CONFIG)
+	$(CC) $(INCPATH) $(CFLAGS) $< -o $@
+
+clean :
+	rm -f $(LIB)
+	rm -f $(CONFIG)/*.o
+

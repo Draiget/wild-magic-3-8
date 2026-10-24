@@ -1,0 +1,41 @@
+CC := /usr/freeware/bin/g++
+GCC := /usr/freeware/bin/gcc
+CFLAGS := -c
+AR := /usr/bin/ar
+ARFLAGS := rs
+
+ifeq (,$(findstring Debug,$(CONFIG)))
+    CFLAGS += -O2 -DNDEBUG
+else
+    CFLAGS += -g -D_DEBUG
+endif
+
+ifeq (,$(findstring Memory,$(CONFIG)))
+else
+    CFLAGS += -DWM3_MEMORY_MANAGER
+endif
+
+INCPATH := -I . -I ../../Include -I /usr/X11R6/include
+INCDIR := ../../Include
+INC := $(wildcard Wm3OpenGL*.h) $(wildcard Wm3Glx*.h)
+INC := $(notdir $(INC))
+SRC := $(wildcard Wm3OpenGL*.cpp) $(wildcard Wm3OpenGL*.c) $(wildcard Wm3Glx*.cpp) $(wildcard Wm3Glx*.c)
+SRC := $(notdir $(SRC))
+OBJDIR := $(CONFIG)
+OBJ := $(SRC:%.cpp=$(OBJDIR)/%.o) $(SRC:%.c=$(OBJDIR)/%.o)
+LIB := ../../Library/$(CONFIG)/libWm3GlxRenderer.a
+
+build : $(OBJ)
+	$(AR) $(ARFLAGS) $(LIB) $(OBJDIR)/*.o
+	cp -fp $(INC) $(INCDIR)
+
+$(OBJDIR)/%.o : %.cpp
+	@mkdir -p $(CONFIG)
+	$(CC) $(INCPATH) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/%.o : %.c
+	@mkdir -p $(CONFIG)
+	$(GCC) $(INCPATH) $(CFLAGS) $< -o $@
+
+clean :
+	rm -f $(OBJDIR)/*.o

@@ -1,0 +1,147 @@
+// Geometric Tools, Inc.
+// http://www.geometrictools.com
+// Copyright (c) 1998-2006.  All Rights Reserved
+//
+// The Wild Magic Library (WM3) source code is supplied under the terms of
+// the license agreement
+//     http://www.geometrictools.com/License/WildMagic3License.pdf
+// and may not be copied or disclosed except in accordance with the terms
+// of that agreement.
+
+#include "Wm3FoundationPCH.h"
+#include "Wm3ConvexHull.h"
+
+namespace Wm3
+{
+//----------------------------------------------------------------------------
+template <class Real>
+ConvexHull<Real>::ConvexHull (int iVertexQuantity, Real fEpsilon, bool bOwner,
+    Query::Type eQueryType)
+{
+    m_eQueryType = eQueryType;
+    m_iVertexQuantity = iVertexQuantity;
+    m_iDimension = 0;
+    m_iSimplexQuantity = 0;
+    m_aiIndex = 0;
+    m_fEpsilon = fEpsilon;
+    m_bOwner = bOwner;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+ConvexHull<Real>::~ConvexHull ()
+{
+    WM3_DELETE[] m_aiIndex;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+int ConvexHull<Real>::GetQueryType () const
+{
+    return m_eQueryType;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+int ConvexHull<Real>::GetVertexQuantity () const
+{
+    return m_iVertexQuantity;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+Real ConvexHull<Real>::GetEpsilon () const
+{
+    return m_fEpsilon;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+bool ConvexHull<Real>::GetOwner () const
+{
+    return m_bOwner;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+int ConvexHull<Real>::GetDimension () const
+{
+    return m_iDimension;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+int ConvexHull<Real>::GetSimplexQuantity () const
+{
+    return m_iSimplexQuantity;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+const int* ConvexHull<Real>::GetIndices () const
+{
+    return m_aiIndex;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+bool ConvexHull<Real>::Load (FILE* pkIFile)
+{
+    WM3_DELETE[] m_aiIndex;
+
+    // fixed-size members
+    int iQueryType;
+    System::Read4le(pkIFile,1,&iQueryType);
+    m_eQueryType = (Query::Type)iQueryType;
+    System::Read4le(pkIFile,1,&m_iVertexQuantity);
+    System::Read4le(pkIFile,1,&m_iDimension);
+    System::Read4le(pkIFile,1,&m_iSimplexQuantity);
+    System::Read4le(pkIFile,1,&m_fEpsilon);
+
+    // variable-size members
+    int iIQuantity;
+    System::Read4le(pkIFile,1,&iIQuantity);
+    if (1 <= m_iDimension && m_iDimension <= 3)
+    {
+        assert(iIQuantity == (m_iDimension+1)*m_iSimplexQuantity);
+        m_aiIndex = WM3_NEW int[iIQuantity];
+        System::Read4le(pkIFile,iIQuantity,m_aiIndex);
+        return true;
+    }
+
+    m_aiIndex = 0;
+    return m_iDimension == 0;
+}
+//----------------------------------------------------------------------------
+template <class Real>
+bool ConvexHull<Real>::Save (FILE* pkOFile) const
+{
+    // fixed-size members
+    int iQueryType = (int)m_eQueryType;
+    System::Write4le(pkOFile,1,&iQueryType);
+    System::Write4le(pkOFile,1,&m_iVertexQuantity);
+    System::Write4le(pkOFile,1,&m_iDimension);
+    System::Write4le(pkOFile,1,&m_iSimplexQuantity);
+    System::Write4le(pkOFile,1,&m_fEpsilon);
+
+    // The member m_bOwner is not streamed because on a Load call, this
+    // object will allocate the vertices and own this memory.
+
+    // variable-size members
+    int iIQuantity;
+    if (1 <= m_iDimension && m_iDimension <= 3)
+    {
+        iIQuantity = (m_iDimension+1)*m_iSimplexQuantity;
+        System::Write4le(pkOFile,1,&iIQuantity);
+        System::Write4le(pkOFile,iIQuantity,m_aiIndex);
+        return true;
+    }
+
+    iIQuantity = 0;
+    System::Write4le(pkOFile,1,&iIQuantity);
+    return m_iDimension == 0;
+}
+//----------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
+// explicit instantiation
+//----------------------------------------------------------------------------
+template WM3_ITEM
+class ConvexHull<float>;
+
+template WM3_ITEM
+class ConvexHull<double>;
+//----------------------------------------------------------------------------
+}
+

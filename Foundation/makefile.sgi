@@ -1,0 +1,61 @@
+build :
+	@mkdir -p ../Include
+	@mkdir -p ../Library/$(CONFIG)
+	@mkdir -p $(CONFIG)
+	@cp -fp *.h ../Include
+	cd Approximation      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Collision          ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Containment        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Controllers        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Curves             ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Detail             ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Distance           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Effects            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd ImageAnalysis      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Interpolation      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Intersection       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Math               ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Meshes             ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Miscellaneous      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Numerics           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd ObjectSystem       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Physics            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd RationalArithmetic ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd SceneGraph         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Shaders            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd SharedArrays       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Sorting            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Surfaces           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd System             ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Terrain            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Tessellation       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeprj.sgi
+
+clean :
+	cd Approximation      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Collision          ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Containment        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Controllers        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Curves             ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Detail             ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Distance           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Effects            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd ImageAnalysis      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Interpolation      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Intersection       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Math               ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Meshes             ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Miscellaneous      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Numerics           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd ObjectSystem       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Physics            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd RationalArithmetic ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd SceneGraph         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Shaders            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd SharedArrays       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Sorting            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Surfaces           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd System             ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Terrain            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	cd Tessellation       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeprj.sgi
+	rm -f $(CONFIG)/*.*
+	rmdir $(CONFIG)

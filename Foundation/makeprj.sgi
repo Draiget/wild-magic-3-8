@@ -1,0 +1,63 @@
+CC := /usr/freeware/bin/g++
+CFLAGS := -c
+AR := /usr/bin/ar
+ARFLAGS := rs
+
+ifeq (,$(findstring Debug,$(CONFIG)))
+    CFLAGS += -O2 -DNDEBUG
+else
+    CFLAGS += -g -D_DEBUG
+endif
+
+ifeq (,$(findstring Memory,$(CONFIG)))
+else
+    CFLAGS += -DWM3_MEMORY_MANAGER
+endif
+
+INCPATH := \
+    -I ../.\
+    -I ../Approximation\
+    -I ../Collision\
+    -I ../Containment\
+    -I ../Controllers\
+    -I ../Curves\
+    -I ../Detail\
+    -I ../Distance\
+    -I ../Effects\
+    -I ../ImageAnalysis\
+    -I ../Interpolation\
+    -I ../Intersection\
+    -I ../Math\
+    -I ../Meshes\
+    -I ../Miscellaneous\
+    -I ../Numerics\
+    -I ../ObjectSystem\
+    -I ../Physics\
+    -I ../RationalArithmetic\
+    -I ../SceneGraph\
+    -I ../Shaders\
+    -I ../SharedArrays\
+    -I ../Sorting\
+    -I ../Surfaces\
+    -I ../System\
+    -I ../Terrain\
+    -I ../Tessellation
+    
+INCDIR := ../../Include
+INC := $(wildcard Wm3*.h) $(wildcard Wm3*.inl) $(wildcard Wm3*.mcr)
+INC := $(notdir $(INC))
+SRC := $(wildcard Wm3*.cpp)
+SRC := $(notdir $(SRC))
+OBJDIR := ../$(CONFIG)
+OBJ := $(SRC:%.cpp=$(OBJDIR)/%.o)
+LIB := ../../Library/$(CONFIG)/libWm3Foundation.a
+
+build : $(OBJ)
+	$(AR) $(ARFLAGS) $(LIB) $(OBJDIR)/*.o
+	cp -fp $(INC) $(INCDIR)
+
+$(OBJDIR)/%.o : %.cpp
+	$(CC) $(INCPATH) $(CFLAGS) $< -o $@
+
+clean :
+	rm -f $(OBJDIR)/*.o

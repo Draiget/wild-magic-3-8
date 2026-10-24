@@ -1,0 +1,17 @@
+build :
+	cd CharcoalEffects ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=CharcoalEffects
+	cd Fresnel         ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Fresnel
+	cd Iridescence     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Iridescence
+	cd Refraction      ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Refraction
+	cd RipplingOcean   ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RipplingOcean
+	cd Skinning        ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Skinning
+	cd VertexNoise     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=VertexNoise
+
+clean :
+	cd CharcoalEffects ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=CharcoalEffects
+	cd Fresnel         ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Fresnel
+	cd Iridescence     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Iridescence
+	cd Refraction      ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Refraction
+	cd RipplingOcean   ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RipplingOcean
+	cd Skinning        ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Skinning
+	cd VertexNoise     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=VertexNoise

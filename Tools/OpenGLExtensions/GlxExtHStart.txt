@@ -1,0 +1,74 @@
+/*
+Geometric Tools, Inc.
+http://www.geometrictools.com
+Copyright (c) 1998-2005.  All Rights Reserved
+
+The Wild Magic Library (WM3) source code is supplied under the terms of
+the license agreement
+    http://www.geometrictools.com/License/WildMagic3License.pdf
+and may not be copied or disclosed except in accordance with the terms
+of that agreement.
+
+This file evolved by modifications from a version of glxext.h that was
+downloaded from the site listed in the license below.  The version of the
+file is: GLX_GLXEXT_VERSION 10
+*/
+
+/*
+** License Applicability. Except to the extent portions of this file are
+** made subject to an alternative license as permitted in the SGI Free
+** Software License B, Version 1.1 (the "License"), the contents of this
+** file are subject only to the provisions of the License. You may not use
+** this file except in compliance with the License. You may obtain a copy
+** of the License at Silicon Graphics, Inc., attn: Legal Services, 1600
+** Amphitheatre Parkway, Mountain View, CA 94043-1351, or at:
+** 
+** http://oss.sgi.com/projects/FreeB
+** 
+** Note that, as provided in the License, the Software is distributed on an
+** "AS IS" basis, with ALL EXPRESS AND IMPLIED WARRANTIES AND CONDITIONS
+** DISCLAIMED, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES AND
+** CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A
+** PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+** 
+** Original Code. The Original Code is: OpenGL Sample Implementation,
+** Version 1.2.1, released January 26, 2000, developed by Silicon Graphics,
+** Inc. The Original Code is Copyright (c) 1991-2004 Silicon Graphics, Inc.
+** Copyright in any portions created by third parties is as indicated
+** elsewhere herein. All Rights Reserved.
+** 
+** Additional Notice Provisions: This software was created using the
+** OpenGL(R) version 1.2.1 Sample Implementation published by SGI, but has
+** not been independently verified as being compliant with the OpenGL(R)
+** version 1.2.1 Specification.
+*/
+
+#ifndef WM3GLXEXTENSIONS_H
+#define WM3GLXEXTENSIONS_H
+
+#include "Wm3OpenGLExtensions.h"
+
+#ifdef __glxext_h_
+#error glxext.h included before Wm3GlxExtensions.h
+#endif
+
+#define __glxext_h_
+
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
+#include <X11/Xmd.h>
+
+#ifndef APIENTRY
+#define APIENTRY
+#endif
+#ifndef APIENTRYP
+#define APIENTRYP APIENTRY *
+#endif
+#ifndef GLAPI
+#define GLAPI extern
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+

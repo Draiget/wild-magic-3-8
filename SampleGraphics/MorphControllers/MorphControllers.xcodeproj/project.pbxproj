@@ -1,0 +1,1037 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C6FBB33083E5FB60068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB32083E5FB60068AA05 /* AGL.framework */; };
+		3C6FBB34083E5FB60068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB32083E5FB60068AA05 /* AGL.framework */; };
+		3C6FBB35083E5FB60068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB32083E5FB60068AA05 /* AGL.framework */; };
+		3C6FBB36083E5FB60068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB32083E5FB60068AA05 /* AGL.framework */; };
+		3C6FBB46083E5FCE0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB45083E5FCE0068AA05 /* Carbon.framework */; };
+		3C6FBB47083E5FCE0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB45083E5FCE0068AA05 /* Carbon.framework */; };
+		3C6FBB48083E5FCE0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB45083E5FCE0068AA05 /* Carbon.framework */; };
+		3C6FBB49083E5FCE0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB45083E5FCE0068AA05 /* Carbon.framework */; };
+		3C6FBB4D083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */; };
+		3C6FBB4E083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */; };
+		3C6FBB4F083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */; };
+		3C6FBB50083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */; };
+		3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6E083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6F083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBD2A083E7D280068AA05 /* libWm3AglApplicationDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBD27083E7D280068AA05 /* libWm3AglApplicationDebug.a */; };
+		3C6FBD2B083E7D280068AA05 /* libWm3AglRendererDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBD28083E7D280068AA05 /* libWm3AglRendererDebug.a */; };
+		3C6FBD2C083E7D280068AA05 /* libWm3FoundationDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBD29083E7D280068AA05 /* libWm3FoundationDebug.a */; };
+		3CA2A74C084A27F0005B1F1B /* libWm3AglApplicationDebug.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A749084A27F0005B1F1B /* libWm3AglApplicationDebug.dylib */; };
+		3CA2A74D084A27F0005B1F1B /* libWm3AglRendererDebug.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A74A084A27F0005B1F1B /* libWm3AglRendererDebug.dylib */; };
+		3CA2A74E084A27F0005B1F1B /* libWm3FoundationDebug.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A74B084A27F0005B1F1B /* libWm3FoundationDebug.dylib */; };
+		3CA2A754084A2827005B1F1B /* libWm3AglApplicationRelease.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A751084A2827005B1F1B /* libWm3AglApplicationRelease.a */; };
+		3CA2A755084A2827005B1F1B /* libWm3AglRendererRelease.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A752084A2827005B1F1B /* libWm3AglRendererRelease.a */; };
+		3CA2A756084A2827005B1F1B /* libWm3FoundationRelease.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A753084A2827005B1F1B /* libWm3FoundationRelease.a */; };
+		3CA2A75C084A2850005B1F1B /* libWm3AglApplicationRelease.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A759084A2850005B1F1B /* libWm3AglApplicationRelease.dylib */; };
+		3CA2A75D084A2850005B1F1B /* libWm3AglRendererRelease.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A75A084A2850005B1F1B /* libWm3AglRendererRelease.dylib */; };
+		3CA2A75E084A2850005B1F1B /* libWm3FoundationRelease.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2A75B084A2850005B1F1B /* libWm3FoundationRelease.dylib */; };
+		7432C24B07F84F4400ABC141 /* MorphControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* MorphControllers.cpp */; };
+		7432C28E07F8577800ABC141 /* MorphControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* MorphControllers.cpp */; };
+		748AA51107F465B300486586 /* MorphControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* MorphControllers.cpp */; };
+		748AA51307F465B300486586 /* MorphControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* MorphControllers.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		748AA4C007F4621A00486586 /* WildMagic */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = WildMagic;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		7469D68D07F87BFC007EF9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748AA4C207F4621A00486586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 748AA4CB07F4624400486586;
+			remoteInfo = "Static Debug";
+		};
+		7469D68F07F87BFC007EF9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748AA4C207F4621A00486586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 748AA4D907F4631800486586;
+			remoteInfo = "Static Release";
+		};
+		7469D69D07F87C65007EF9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748AA4C207F4621A00486586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7432C24807F84F4400ABC141;
+			remoteInfo = "Dynamic Debug";
+		};
+		7469D69F07F87C65007EF9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748AA4C207F4621A00486586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7432C28B07F8577800ABC141;
+			remoteInfo = "Dynamic Release";
+		};
+		7469D6AF07F87E0B007EF9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748AA4C207F4621A00486586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7469D68A07F87BDB007EF9CF;
+			remoteInfo = "Static Apps";
+		};
+		7469D6B107F87E0B007EF9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748AA4C207F4621A00486586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7469D69A07F87C60007EF9CF;
+			remoteInfo = "Dynamic Apps";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C6FBB32083E5FB60068AA05 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		3C6FBB45083E5FCE0068AA05 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawSprocket.framework; path = /System/Library/Frameworks/DrawSprocket.framework; sourceTree = "<absolute>"; };
+		3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		3C6FBD27083E7D280068AA05 /* libWm3AglApplicationDebug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm3AglApplicationDebug.a; path = ../../Library/Debug/libWm3AglApplicationDebug.a; sourceTree = SOURCE_ROOT; };
+		3C6FBD28083E7D280068AA05 /* libWm3AglRendererDebug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm3AglRendererDebug.a; path = ../../Library/Debug/libWm3AglRendererDebug.a; sourceTree = SOURCE_ROOT; };
+		3C6FBD29083E7D280068AA05 /* libWm3FoundationDebug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm3FoundationDebug.a; path = ../../Library/Debug/libWm3FoundationDebug.a; sourceTree = SOURCE_ROOT; };
+		3CA2A749084A27F0005B1F1B /* libWm3AglApplicationDebug.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3AglApplicationDebug.dylib; path = ../../Library/DebugDLL/libWm3AglApplicationDebug.dylib; sourceTree = SOURCE_ROOT; };
+		3CA2A74A084A27F0005B1F1B /* libWm3AglRendererDebug.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3AglRendererDebug.dylib; path = ../../Library/DebugDLL/libWm3AglRendererDebug.dylib; sourceTree = SOURCE_ROOT; };
+		3CA2A74B084A27F0005B1F1B /* libWm3FoundationDebug.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3FoundationDebug.dylib; path = ../../Library/DebugDLL/libWm3FoundationDebug.dylib; sourceTree = SOURCE_ROOT; };
+		3CA2A751084A2827005B1F1B /* libWm3AglApplicationRelease.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm3AglApplicationRelease.a; path = ../../Library/Release/libWm3AglApplicationRelease.a; sourceTree = SOURCE_ROOT; };
+		3CA2A752084A2827005B1F1B /* libWm3AglRendererRelease.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm3AglRendererRelease.a; path = ../../Library/Release/libWm3AglRendererRelease.a; sourceTree = SOURCE_ROOT; };
+		3CA2A753084A2827005B1F1B /* libWm3FoundationRelease.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm3FoundationRelease.a; path = ../../Library/Release/libWm3FoundationRelease.a; sourceTree = SOURCE_ROOT; };
+		3CA2A759084A2850005B1F1B /* libWm3AglApplicationRelease.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3AglApplicationRelease.dylib; path = ../../Library/ReleaseDLL/libWm3AglApplicationRelease.dylib; sourceTree = SOURCE_ROOT; };
+		3CA2A75A084A2850005B1F1B /* libWm3AglRendererRelease.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3AglRendererRelease.dylib; path = ../../Library/ReleaseDLL/libWm3AglRendererRelease.dylib; sourceTree = SOURCE_ROOT; };
+		3CA2A75B084A2850005B1F1B /* libWm3FoundationRelease.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3FoundationRelease.dylib; path = ../../Library/ReleaseDLL/libWm3FoundationRelease.dylib; sourceTree = SOURCE_ROOT; };
+		7432C25307F84F4400ABC141 /* MorphControllersDebugDLL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphControllersDebugDLL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7432C29607F8577800ABC141 /* MorphControllersReleaseDLL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphControllersReleaseDLL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7469D68B07F87BDB007EF9CF /* Static Apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Static Apps"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7469D69B07F87C60007EF9CF /* Dynamic Apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Dynamic Apps"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7469D6AD07F87E06007EF9CF /* All Apps */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = "All Apps"; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA4CC07F4624400486586 /* MorphControllersDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphControllersDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA4DA07F4631800486586 /* MorphControllersRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphControllersRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA50F07F465B300486586 /* MorphControllers.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = MorphControllers.cpp; sourceTree = SOURCE_ROOT; };
+		748AA51007F465B300486586 /* MorphControllers.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MorphControllers.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7432C24C07F84F4400ABC141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBB35083E5FB60068AA05 /* AGL.framework in Frameworks */,
+				3C6FBB48083E5FCE0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBB4F083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */,
+				3C6FBC6E083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CA2A74C084A27F0005B1F1B /* libWm3AglApplicationDebug.dylib in Frameworks */,
+				3CA2A74D084A27F0005B1F1B /* libWm3AglRendererDebug.dylib in Frameworks */,
+				3CA2A74E084A27F0005B1F1B /* libWm3FoundationDebug.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7432C28F07F8577800ABC141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBB36083E5FB60068AA05 /* AGL.framework in Frameworks */,
+				3C6FBB49083E5FCE0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBB50083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */,
+				3C6FBC6F083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CA2A75C084A2850005B1F1B /* libWm3AglApplicationRelease.dylib in Frameworks */,
+				3CA2A75D084A2850005B1F1B /* libWm3AglRendererRelease.dylib in Frameworks */,
+				3CA2A75E084A2850005B1F1B /* libWm3FoundationRelease.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4CA07F4624400486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBB33083E5FB60068AA05 /* AGL.framework in Frameworks */,
+				3C6FBB46083E5FCE0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBB4D083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */,
+				3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3C6FBD2A083E7D280068AA05 /* libWm3AglApplicationDebug.a in Frameworks */,
+				3C6FBD2B083E7D280068AA05 /* libWm3AglRendererDebug.a in Frameworks */,
+				3C6FBD2C083E7D280068AA05 /* libWm3FoundationDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D807F4631800486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBB34083E5FB60068AA05 /* AGL.framework in Frameworks */,
+				3C6FBB47083E5FCE0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBB4E083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */,
+				3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CA2A754084A2827005B1F1B /* libWm3AglApplicationRelease.a in Frameworks */,
+				3CA2A755084A2827005B1F1B /* libWm3AglRendererRelease.a in Frameworks */,
+				3CA2A756084A2827005B1F1B /* libWm3FoundationRelease.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C6FBB68083E613D0068AA05 /* DebugDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2A749084A27F0005B1F1B /* libWm3AglApplicationDebug.dylib */,
+				3CA2A74A084A27F0005B1F1B /* libWm3AglRendererDebug.dylib */,
+				3CA2A74B084A27F0005B1F1B /* libWm3FoundationDebug.dylib */,
+			);
+			name = DebugDLL;
+			sourceTree = "<group>";
+		};
+		3C6FBB6B083E61430068AA05 /* ReleaseDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2A759084A2850005B1F1B /* libWm3AglApplicationRelease.dylib */,
+				3CA2A75A084A2850005B1F1B /* libWm3AglRendererRelease.dylib */,
+				3CA2A75B084A2850005B1F1B /* libWm3FoundationRelease.dylib */,
+			);
+			name = ReleaseDLL;
+			sourceTree = "<group>";
+		};
+		7432C2B407F8766A00ABC141 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3C6FBD27083E7D280068AA05 /* libWm3AglApplicationDebug.a */,
+				3C6FBD28083E7D280068AA05 /* libWm3AglRendererDebug.a */,
+				3C6FBD29083E7D280068AA05 /* libWm3FoundationDebug.a */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		7432C2B707F8767000ABC141 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2A751084A2827005B1F1B /* libWm3AglApplicationRelease.a */,
+				3CA2A752084A2827005B1F1B /* libWm3AglRendererRelease.a */,
+				3CA2A753084A2827005B1F1B /* libWm3FoundationRelease.a */,
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		748AA4BE07F4621A00486586 = {
+			isa = PBXGroup;
+			children = (
+				748AA50C07F465A200486586 /* Sources */,
+				748AA4F707F4641600486586 /* Libraries */,
+				748AA4E207F463F300486586 /* Frameworks */,
+				748AA4CD07F4624400486586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		748AA4CD07F4624400486586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748AA4CC07F4624400486586 /* MorphControllersDebug.app */,
+				748AA4DA07F4631800486586 /* MorphControllersRelease.app */,
+				7432C25307F84F4400ABC141 /* MorphControllersDebugDLL.app */,
+				7432C29607F8577800ABC141 /* MorphControllersReleaseDLL.app */,
+				7469D68B07F87BDB007EF9CF /* Static Apps */,
+				7469D69B07F87C60007EF9CF /* Dynamic Apps */,
+				7469D6AD07F87E06007EF9CF /* All Apps */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748AA4E207F463F300486586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */,
+				3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */,
+				3C6FBB45083E5FCE0068AA05 /* Carbon.framework */,
+				3C6FBB32083E5FB60068AA05 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		748AA4F707F4641600486586 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7432C2B407F8766A00ABC141 /* Debug */,
+				3C6FBB68083E613D0068AA05 /* DebugDLL */,
+				7432C2B707F8767000ABC141 /* Release */,
+				3C6FBB6B083E61430068AA05 /* ReleaseDLL */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		748AA50C07F465A200486586 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				748AA50F07F465B300486586 /* MorphControllers.cpp */,
+				748AA51007F465B300486586 /* MorphControllers.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7432C24807F84F4400ABC141 /* Dynamic Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB897FA086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Dynamic Debug" */;
+			buildPhases = (
+				7432C24907F84F4400ABC141 /* Resources */,
+				7432C24A07F84F4400ABC141 /* Sources */,
+				7432C24C07F84F4400ABC141 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/DebugDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersDebugDLL;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Dynamic Debug";
+			productName = MorphControllersDebugDLL;
+			productReference = 7432C25307F84F4400ABC141 /* MorphControllersDebugDLL.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MorphControllersDebugDLL</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.geometrictools.MorphControllersDebugDLL</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		7432C28B07F8577800ABC141 /* Dynamic Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB897FD086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Dynamic Release" */;
+			buildPhases = (
+				7432C28C07F8577800ABC141 /* Resources */,
+				7432C28D07F8577800ABC141 /* Sources */,
+				7432C28F07F8577800ABC141 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/ReleaseDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersReleaseDLL;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Dynamic Release";
+			productName = MorphControllersReleaseDLL;
+			productReference = 7432C29607F8577800ABC141 /* MorphControllersReleaseDLL.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MorphControllersReleaseDLL</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.geometrictools.MorphControllersReleaseDLL</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		7469D68A07F87BDB007EF9CF /* Static Apps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB897F7086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Static Apps" */;
+			buildPhases = (
+				7469D69307F87C04007EF9CF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				PRODUCT_NAME = "Static Apps";
+			};
+			dependencies = (
+				7469D68E07F87BFC007EF9CF /* PBXTargetDependency */,
+				7469D69007F87BFC007EF9CF /* PBXTargetDependency */,
+			);
+			name = "Static Apps";
+			productName = "Static Apps";
+			productReference = 7469D68B07F87BDB007EF9CF /* Static Apps */;
+			productType = "com.apple.product-type.tool";
+		};
+		7469D69A07F87C60007EF9CF /* Dynamic Apps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB89800086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Dynamic Apps" */;
+			buildPhases = (
+				7469D6A307F87D01007EF9CF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				PRODUCT_NAME = "Dynamic Apps";
+			};
+			dependencies = (
+				7469D69E07F87C65007EF9CF /* PBXTargetDependency */,
+				7469D6A007F87C65007EF9CF /* PBXTargetDependency */,
+			);
+			name = "Dynamic Apps";
+			productName = "Dynamic Apps";
+			productReference = 7469D69B07F87C60007EF9CF /* Dynamic Apps */;
+			productType = "com.apple.product-type.tool";
+		};
+		7469D6AC07F87E06007EF9CF /* All Apps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB89803086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "All Apps" */;
+			buildPhases = (
+				7469D6B507F87E29007EF9CF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				PRODUCT_NAME = "All Apps";
+			};
+			dependencies = (
+				7469D6B007F87E0B007EF9CF /* PBXTargetDependency */,
+				7469D6B207F87E0B007EF9CF /* PBXTargetDependency */,
+			);
+			name = "All Apps";
+			productName = "All Apps";
+			productReference = 7469D6AD07F87E06007EF9CF /* All Apps */;
+			productType = "com.apple.product-type.tool";
+		};
+		748AA4CB07F4624400486586 /* Static Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB897F1086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Static Debug" */;
+			buildPhases = (
+				748AA4C807F4624400486586 /* Resources */,
+				748AA4C907F4624400486586 /* Sources */,
+				748AA4CA07F4624400486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/Debug";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Static Debug";
+			productName = MorphControllersDebug;
+			productReference = 748AA4CC07F4624400486586 /* MorphControllersDebug.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MorphControllersDebug</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.geometrictools.MorphControllersDebug</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		748AA4D907F4631800486586 /* Static Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB897F4086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Static Release" */;
+			buildPhases = (
+				748AA4D607F4631800486586 /* Resources */,
+				748AA4D707F4631800486586 /* Sources */,
+				748AA4D807F4631800486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/Release";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Static Release";
+			productName = MorphControllersRelease;
+			productReference = 748AA4DA07F4631800486586 /* MorphControllersRelease.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MorphControllersRelease</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.geometrictools.MorphControllersRelease</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748AA4C207F4621A00486586 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3CB89806086DA68300B2EF42 /* Build configuration list for PBXProject "MorphControllers" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				748AA4C007F4621A00486586 /* WildMagic */,
+			);
+			hasScannedForEncodings = 0;
+			mainGroup = 748AA4BE07F4621A00486586;
+			productRefGroup = 748AA4CD07F4624400486586 /* Products */;
+			projectDirPath = "";
+			targets = (
+				7469D6AC07F87E06007EF9CF /* All Apps */,
+				7469D68A07F87BDB007EF9CF /* Static Apps */,
+				7469D69A07F87C60007EF9CF /* Dynamic Apps */,
+				748AA4CB07F4624400486586 /* Static Debug */,
+				748AA4D907F4631800486586 /* Static Release */,
+				7432C24807F84F4400ABC141 /* Dynamic Debug */,
+				7432C28B07F8577800ABC141 /* Dynamic Release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7432C24907F84F4400ABC141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7432C28C07F8577800ABC141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4C807F4624400486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D607F4631800486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7469D69307F87C04007EF9CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Static Applications\"";
+		};
+		7469D6A307F87D01007EF9CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Dynamic Applications\"";
+		};
+		7469D6B507F87E29007EF9CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"All Applications\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7432C24A07F84F4400ABC141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7432C24B07F84F4400ABC141 /* MorphControllers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7432C28D07F8577800ABC141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7432C28E07F8577800ABC141 /* MorphControllers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4C907F4624400486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748AA51307F465B300486586 /* MorphControllers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D707F4631800486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748AA51107F465B300486586 /* MorphControllers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7469D68E07F87BFC007EF9CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 748AA4CB07F4624400486586 /* Static Debug */;
+			targetProxy = 7469D68D07F87BFC007EF9CF /* PBXContainerItemProxy */;
+		};
+		7469D69007F87BFC007EF9CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 748AA4D907F4631800486586 /* Static Release */;
+			targetProxy = 7469D68F07F87BFC007EF9CF /* PBXContainerItemProxy */;
+		};
+		7469D69E07F87C65007EF9CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7432C24807F84F4400ABC141 /* Dynamic Debug */;
+			targetProxy = 7469D69D07F87C65007EF9CF /* PBXContainerItemProxy */;
+		};
+		7469D6A007F87C65007EF9CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7432C28B07F8577800ABC141 /* Dynamic Release */;
+			targetProxy = 7469D69F07F87C65007EF9CF /* PBXContainerItemProxy */;
+		};
+		7469D6B007F87E0B007EF9CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7469D68A07F87BDB007EF9CF /* Static Apps */;
+			targetProxy = 7469D6AF07F87E0B007EF9CF /* PBXContainerItemProxy */;
+		};
+		7469D6B207F87E0B007EF9CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7469D69A07F87C60007EF9CF /* Dynamic Apps */;
+			targetProxy = 7469D6B107F87E0B007EF9CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CB897F2086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/Debug";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3CB897F3086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/Debug";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3CB897F5086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/Release";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3CB897F6086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/Release";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3CB897F8086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Static Apps";
+			};
+			name = WildMagic;
+		};
+		3CB897F9086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Static Apps";
+			};
+			name = Default;
+		};
+		3CB897FB086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/DebugDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersDebugDLL;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3CB897FC086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/DebugDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersDebugDLL;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3CB897FE086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/ReleaseDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersReleaseDLL;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3CB897FF086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/ReleaseDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = MorphControllersReleaseDLL;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3CB89801086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Dynamic Apps";
+			};
+			name = WildMagic;
+		};
+		3CB89802086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Dynamic Apps";
+			};
+			name = Default;
+		};
+		3CB89804086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "All Apps";
+			};
+			name = WildMagic;
+		};
+		3CB89805086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "All Apps";
+			};
+			name = Default;
+		};
+		3CB89807086DA68300B2EF42 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = WildMagic;
+		};
+		3CB89808086DA68300B2EF42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CB897F1086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Static Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB897F2086DA68300B2EF42 /* WildMagic */,
+				3CB897F3086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3CB897F4086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Static Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB897F5086DA68300B2EF42 /* WildMagic */,
+				3CB897F6086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3CB897F7086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Static Apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB897F8086DA68300B2EF42 /* WildMagic */,
+				3CB897F9086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3CB897FA086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Dynamic Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB897FB086DA68300B2EF42 /* WildMagic */,
+				3CB897FC086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3CB897FD086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Dynamic Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB897FE086DA68300B2EF42 /* WildMagic */,
+				3CB897FF086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3CB89800086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "Dynamic Apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB89801086DA68300B2EF42 /* WildMagic */,
+				3CB89802086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3CB89803086DA68300B2EF42 /* Build configuration list for PBXNativeTarget "All Apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB89804086DA68300B2EF42 /* WildMagic */,
+				3CB89805086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3CB89806086DA68300B2EF42 /* Build configuration list for PBXProject "MorphControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB89807086DA68300B2EF42 /* WildMagic */,
+				3CB89808086DA68300B2EF42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748AA4C207F4621A00486586 /* Project object */;
+}

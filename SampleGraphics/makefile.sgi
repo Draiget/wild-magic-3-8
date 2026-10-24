@@ -1,0 +1,69 @@
+build :
+	cd BillboardNodes    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BillboardNodes
+	cd BspNodes          ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BspNodes
+	cd BumpMaps          ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BumpMaps
+	cd CachedArrays      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=CachedArrays
+	cd Castle            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Castle
+	cd ClodMeshes        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ClodMeshes
+	cd ClodTerrains      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ClodTerrains
+	cd Collisions        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Collisions
+	cd DarkBumpMaps      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DarkBumpMaps
+	cd DeferredDraw      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DeferredDraw
+	cd DlodNodes         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DlodNodes
+	cd EnvironmentMaps   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=EnvironmentMaps
+	cd GlossMaps         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GlossMaps
+	cd InverseKinematics ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=InverseKinematics
+	cd MaterialAlpha     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MaterialAlpha
+	cd MaterialTexture   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MaterialTexture
+	cd MorphControllers  ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MorphControllers
+	cd Multitexture      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Multitexture
+	cd NonuniformScale   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=NonuniformScale
+	cd ParticleSystems   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ParticleSystems
+	cd PlanarReflections ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PlanarReflections
+	cd PlanarShadows     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PlanarShadows
+	cd PointSystems      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PointSystems
+	cd Polylines         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Polylines
+	cd Portals           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Portals
+	cd ProjectedTextures ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ProjectedTextures
+	cd RenderToTexture   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RenderToTexture
+	cd ScreenPolygons    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ScreenPolygons
+	cd SkinnedBiped      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SkinnedBiped
+	cd SortFaces         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SortFaces
+	cd SurfaceMeshes     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SurfaceMeshes
+	cd SwitchNodes       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SwitchNodes
+	cd Terrains          ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Terrains
+
+clean :
+	cd BillboardNodes    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BillboardNodes
+	cd BspNodes          ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BspNodes
+	cd BumpMaps          ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BumpMaps
+	cd CachedArrays      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=CachedArrays
+	cd Castle            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Castle
+	cd ClodMeshes        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ClodMeshes
+	cd ClodTerrains      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ClodTerrains
+	cd Collisions        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Collisions
+	cd DarkBumpMaps      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DarkBumpMaps
+	cd DeferredDraw      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DeferredDraw
+	cd DlodNodes         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DlodNodes
+	cd EnvironmentMaps   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=EnvironmentMaps
+	cd GlossMaps         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GlossMaps
+	cd InverseKinematics ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=InverseKinematics
+	cd MaterialAlpha     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MaterialAlpha
+	cd MaterialTexture   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MaterialTexture
+	cd MorphControllers  ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MorphControllers
+	cd Multitexture      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Multitexture
+	cd NonuniformScale   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=NonuniformScale
+	cd ParticleSystems   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ParticleSystems
+	cd PlanarReflections ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PlanarReflections
+	cd PlanarShadows     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PlanarShadows
+	cd PointSystems      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PointSystems
+	cd Polylines         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Polylines
+	cd Portals           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Portals
+	cd ProjectedTextures ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ProjectedTextures
+	cd RenderToTexture   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RenderToTexture
+	cd ScreenPolygons    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ScreenPolygons
+	cd SkinnedBiped      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SkinnedBiped
+	cd SortFaces         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SortFaces
+	cd SurfaceMeshes     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SurfaceMeshes
+	cd SwitchNodes       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SwitchNodes
+	cd Terrains          ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Terrains

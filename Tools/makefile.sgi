@@ -1,0 +1,7 @@
+build :
+	cd ScenePrinter ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ScenePrinter
+	cd SimpleViewer ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SimpleViewer
+
+clean :
+	cd ScenePrinter ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ScenePrinter
+	cd SimpleViewer ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SimpleViewer

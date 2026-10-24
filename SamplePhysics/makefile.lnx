@@ -1,0 +1,75 @@
+build :
+	cd BallHill               ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BallHill
+	cd BallRubberBand         ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BallRubberBand
+	cd BeadSlide              ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BeadSlide
+	cd BouncingBall           ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BouncingBall
+	cd BouncingSpheres        ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BouncingSpheres
+	cd BouncingTetrahedra     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BouncingTetrahedra
+	cd BSplineCurveExamples   ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BSplineCurveExamples
+	cd Cloth                  ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Cloth
+	cd DoublePendulum         ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=DoublePendulum
+	cd ExtremalQuery          ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=ExtremalQuery
+	cd FlowingSkirt           ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FlowingSkirt
+	cd FoucaultPendulum       ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FoucaultPendulum
+	cd FreeFormDeformation    ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FreeFormDeformation
+	cd FreeTopFixedTip        ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FreeTopFixedTip
+	cd GelatinBlob            ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=GelatinBlob
+	cd GelatinCube            ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=GelatinCube
+	cd HelixTubeSurface       ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=HelixTubeSurface
+	cd IntersectBoxes         ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=IntersectBoxes
+	cd IntersectIntervals     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=IntersectIntervals
+	cd IntersectRectangles    ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=IntersectRectangles
+	cd KeplerPolarForm        ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=KeplerPolarForm
+	cd MassPulleySpringSystem ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=MassPulleySpringSystem
+	cd NURBSCurveExample      ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=NURBSCurveExample
+	cd PolygonDistance        ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=PolygonDistance
+	cd PolyhedronDistance     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=PolyhedronDistance
+	cd Rope                   ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Rope
+	cd RoughPlaneFlatBoard    ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneFlatBoard
+	cd RoughPlaneParticle1    ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneParticle1
+	cd RoughPlaneParticle2    ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneParticle2
+	cd RoughPlaneSolidBox     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneSolidBox
+	cd RoughPlaneThinRod1     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneThinRod1
+	cd RoughPlaneThinRod2     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneThinRod2
+	cd SimplePendulum         ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=SimplePendulum
+	cd SimplePendulumFriction ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=SimplePendulumFriction
+	cd WaterDropFormation     ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=WaterDropFormation
+	cd WrigglingSnake         ; make CONFIG=$(CONFIG) -f ../makeapp.lnx APP=WrigglingSnake
+
+clean :
+	cd BallHill               ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BallHill
+	cd BallRubberBand         ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BallRubberBand
+	cd BeadSlide              ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BeadSlide
+	cd BouncingBall           ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BouncingBall
+	cd BouncingSpheres        ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BouncingSpheres
+	cd BouncingTetrahedra     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BouncingTetrahedra
+	cd BSplineCurveExamples   ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=BSplineCurveExamples
+	cd Cloth                  ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Cloth
+	cd DoublePendulum         ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=DoublePendulum
+	cd ExtremalQuery          ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=ExtremalQuery
+	cd FlowingSkirt           ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FlowingSkirt
+	cd FoucaultPendulum       ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FoucaultPendulum
+	cd FreeFormDeformation    ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FreeFormDeformation
+	cd FreeTopFixedTip        ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=FreeTopFixedTip
+	cd GelatinBlob            ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=GelatinBlob
+	cd GelatinCube            ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=GelatinCube
+	cd HelixTubeSurface       ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=HelixTubeSurface
+	cd IntersectBoxes         ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=IntersectBoxes
+	cd IntersectIntervals     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=IntersectIntervals
+	cd IntersectRectangles    ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=IntersectRectangles
+	cd KeplerPolarForm        ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=KeplerPolarForm
+	cd MassPulleySpringSystem ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=MassPulleySpringSystem
+	cd NURBSCurveExample      ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=NURBSCurveExample
+	cd PolygonDistance        ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=PolygonDistance
+	cd PolyhedronDistance     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=PolyhedronDistance
+	cd Rope                   ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=Rope
+	cd RoughPlaneFlatBoard    ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneFlatBoard
+	cd RoughPlaneParticle1    ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneParticle1
+	cd RoughPlaneParticle2    ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneParticle2
+	cd RoughPlaneSolidBox     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneSolidBox
+	cd RoughPlaneThinRod1     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneThinRod1
+	cd RoughPlaneThinRod2     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=RoughPlaneThinRod2
+	cd SimplePendulum         ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=SimplePendulum
+	cd SimplePendulumFriction ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=SimplePendulumFriction
+	cd WaterDropFormation     ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=WaterDropFormation
+	cd WrigglingSnake         ; make clean CONFIG=$(CONFIG) -f ../makeapp.lnx APP=WrigglingSnake

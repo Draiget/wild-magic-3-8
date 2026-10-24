@@ -1,0 +1,17 @@
+build :
+	cd BinaryOperations   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BinaryOperations
+	cd ConformalMapping   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ConformalMapping
+	cd ExtractLevelCubes  ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ExtractLevelCubes
+	cd ExtractLevelCurves ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ExtractLevelCurves
+	cd ExtractLevelTetra  ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ExtractLevelTetra
+	cd ImViewer           ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ImViewer
+	cd VolumeRenderer     ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=VolumeRenderer
+
+clean :
+	cd BinaryOperations   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BinaryOperations
+	cd ConformalMapping   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ConformalMapping
+	cd ExtractLevelCubes  ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ExtractLevelCubes
+	cd ExtractLevelCurves ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ExtractLevelCurves
+	cd ExtractLevelTetra  ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ExtractLevelTetra
+	cd ImViewer           ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ImViewer
+	cd VolumeRenderer     ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=VolumeRenderer

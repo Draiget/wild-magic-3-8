@@ -1,0 +1,17 @@
+build :
+	cd CharcoalEffects ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=CharcoalEffects
+	cd Fresnel         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Fresnel
+	cd Iridescence     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Iridescence
+	cd Refraction      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Refraction
+	cd RipplingOcean   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RipplingOcean
+	cd Skinning        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Skinning
+	cd VertexNoise     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=VertexNoise
+
+clean :
+	cd CharcoalEffects ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=CharcoalEffects
+	cd Fresnel         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Fresnel
+	cd Iridescence     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Iridescence
+	cd Refraction      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Refraction
+	cd RipplingOcean   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RipplingOcean
+	cd Skinning        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Skinning
+	cd VertexNoise     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=VertexNoise

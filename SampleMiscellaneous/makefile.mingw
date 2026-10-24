@@ -1,0 +1,37 @@
+build :
+	cd BezierFreeForm2D    ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BezierFreeForm2D
+	cd Boolean2D           ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Boolean2D
+	cd BSplineFitDiscrete  ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BSplineFitDiscrete
+	cd BSplineLeastSquares ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BSplineLeastSquares
+	cd ClodPolyline        ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ClodPolyline
+	cd ConvexHull2D        ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ConvexHull2D
+	cd ConvexHull3D        ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ConvexHull3D
+	cd Delaunay2D          ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Delaunay2D
+	cd Delaunay3D          ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Delaunay3D
+	cd DrawImplicitSurface ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DrawImplicitSurface
+	cd GeodesicHeightField ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=GeodesicHeightField
+	cd GeodesicPaths       ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=GeodesicPaths
+	cd MapTextureToQuad    ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MapTextureToQuad
+	cd MinimalCycleBasis   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MinimalCycleBasis
+	cd Polysolid2D         ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Polysolid2D
+	cd QuadraticFreeForm2D ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=QuadraticFreeForm2D
+	cd Triangulation       ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Triangulation
+
+clean :
+	cd BezierFreeForm2D    ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BezierFreeForm2D
+	cd Boolean2D           ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Boolean2D
+	cd BSplineFitDiscrete  ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BSplineFitDiscrete
+	cd BSplineLeastSquares ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BSplineLeastSquares
+	cd ClodPolyline        ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ClodPolyline
+	cd ConvexHull2D        ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ConvexHull2D
+	cd ConvexHull3D        ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ConvexHull3D
+	cd Delaunay2D          ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Delaunay2D
+	cd Delaunay3D          ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Delaunay3D
+	cd DrawImplicitSurface ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DrawImplicitSurface
+	cd GeodesicHeightField ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=GeodesicHeightField
+	cd GeodesicPaths       ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=GeodesicPaths
+	cd MapTextureToQuad    ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MapTextureToQuad
+	cd MinimalCycleBasis   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MinimalCycleBasis
+	cd Polysolid2D         ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Polysolid2D
+	cd QuadraticFreeForm2D ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=QuadraticFreeForm2D
+	cd Triangulation       ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Triangulation

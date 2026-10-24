@@ -1,0 +1,69 @@
+build :
+	cd BillboardNodes    ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BillboardNodes
+	cd BspNodes          ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BspNodes
+	cd BumpMaps          ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BumpMaps
+	cd CachedArrays      ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=CachedArrays
+	cd Castle            ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Castle
+	cd ClodMeshes        ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ClodMeshes
+	cd ClodTerrains      ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ClodTerrains
+	cd Collisions        ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Collisions
+	cd DarkBumpMaps      ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DarkBumpMaps
+	cd DeferredDraw      ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DeferredDraw
+	cd DlodNodes         ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DlodNodes
+	cd EnvironmentMaps   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=EnvironmentMaps
+	cd GlossMaps         ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=GlossMaps
+	cd InverseKinematics ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=InverseKinematics
+	cd MaterialAlpha     ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MaterialAlpha
+	cd MaterialTexture   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MaterialTexture
+	cd MorphControllers  ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MorphControllers
+	cd Multitexture      ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Multitexture
+	cd NonuniformScale   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=NonuniformScale
+	cd ParticleSystems   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ParticleSystems
+	cd PlanarReflections ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=PlanarReflections
+	cd PlanarShadows     ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=PlanarShadows
+	cd PointSystems      ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=PointSystems
+	cd Polylines         ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Polylines
+	cd Portals           ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Portals
+	cd ProjectedTextures ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ProjectedTextures
+	cd RenderToTexture   ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=RenderToTexture
+	cd ScreenPolygons    ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ScreenPolygons
+	cd SkinnedBiped      ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SkinnedBiped
+	cd SortFaces         ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SortFaces
+	cd SurfaceMeshes     ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SurfaceMeshes
+	cd SwitchNodes       ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SwitchNodes
+	cd Terrains          ; make CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Terrains
+
+clean :
+	cd BillboardNodes    ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BillboardNodes
+	cd BspNodes          ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BspNodes
+	cd BumpMaps          ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=BumpMaps
+	cd CachedArrays      ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=CachedArrays
+	cd Castle            ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Castle
+	cd ClodMeshes        ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ClodMeshes
+	cd ClodTerrains      ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ClodTerrains
+	cd Collisions        ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Collisions
+	cd DarkBumpMaps      ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DarkBumpMaps
+	cd DeferredDraw      ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DeferredDraw
+	cd DlodNodes         ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=DlodNodes
+	cd EnvironmentMaps   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=EnvironmentMaps
+	cd GlossMaps         ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=GlossMaps
+	cd InverseKinematics ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=InverseKinematics
+	cd MaterialAlpha     ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MaterialAlpha
+	cd MaterialTexture   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MaterialTexture
+	cd MorphControllers  ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=MorphControllers
+	cd Multitexture      ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Multitexture
+	cd NonuniformScale   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=NonuniformScale
+	cd ParticleSystems   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ParticleSystems
+	cd PlanarReflections ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=PlanarReflections
+	cd PlanarShadows     ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=PlanarShadows
+	cd PointSystems      ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=PointSystems
+	cd Polylines         ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Polylines
+	cd Portals           ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Portals
+	cd ProjectedTextures ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ProjectedTextures
+	cd RenderToTexture   ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=RenderToTexture
+	cd ScreenPolygons    ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=ScreenPolygons
+	cd SkinnedBiped      ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SkinnedBiped
+	cd SortFaces         ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SortFaces
+	cd SurfaceMeshes     ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SurfaceMeshes
+	cd SwitchNodes       ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=SwitchNodes
+	cd Terrains          ; make clean CONFIG=$(CONFIG) -f ../makeapp.mingw APP=Terrains

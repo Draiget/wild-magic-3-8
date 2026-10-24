@@ -1,0 +1,37 @@
+build :
+	cd BezierFreeForm2D    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BezierFreeForm2D
+	cd Boolean2D           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Boolean2D
+	cd BSplineFitDiscrete  ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BSplineFitDiscrete
+	cd BSplineLeastSquares ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BSplineLeastSquares
+	cd ClodPolyline        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ClodPolyline
+	cd ConvexHull2D        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ConvexHull2D
+	cd ConvexHull3D        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ConvexHull3D
+	cd Delaunay2D          ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Delaunay2D
+	cd Delaunay3D          ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Delaunay3D
+	cd DrawImplicitSurface ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DrawImplicitSurface
+	cd GeodesicHeightField ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GeodesicHeightField
+	cd GeodesicPaths       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GeodesicPaths
+	cd MapTextureToQuad    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MapTextureToQuad
+	cd MinimalCycleBasis   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MinimalCycleBasis
+	cd Polysolid2D         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Polysolid2D
+	cd QuadraticFreeForm2D ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=QuadraticFreeForm2D
+	cd Triangulation       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Triangulation
+
+clean :
+	cd BezierFreeForm2D    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BezierFreeForm2D
+	cd Boolean2D           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Boolean2D
+	cd BSplineFitDiscrete  ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BSplineFitDiscrete
+	cd BSplineLeastSquares ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BSplineLeastSquares
+	cd ClodPolyline        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ClodPolyline
+	cd ConvexHull2D        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ConvexHull2D
+	cd ConvexHull3D        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ConvexHull3D
+	cd Delaunay2D          ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Delaunay2D
+	cd Delaunay3D          ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Delaunay3D
+	cd DrawImplicitSurface ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DrawImplicitSurface
+	cd GeodesicHeightField ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GeodesicHeightField
+	cd GeodesicPaths       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GeodesicPaths
+	cd MapTextureToQuad    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MapTextureToQuad
+	cd MinimalCycleBasis   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MinimalCycleBasis
+	cd Polysolid2D         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Polysolid2D
+	cd QuadraticFreeForm2D ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=QuadraticFreeForm2D
+	cd Triangulation       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Triangulation

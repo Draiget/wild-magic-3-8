@@ -1,0 +1,41 @@
+CC := /mingw/bin/g++
+GCC := /mingw/bin/gcc
+CFLAGS := -c -DMINGW
+AR := /mingw/bin/ar
+ARFLAGS := rs
+
+ifeq (,$(findstring Debug,$(CONFIG)))
+    CFLAGS += -O2 -DNDEBUG
+else
+    CFLAGS += -g -D_DEBUG
+endif
+
+ifeq (,$(findstring Memory,$(CONFIG)))
+else
+    CFLAGS += -DWM3_MEMORY_MANAGER
+endif
+
+INCPATH := -I . -I /mingw/include -I ../../Include
+INCDIR := ../../Include
+INC := $(wildcard Wm3OpenGL*.h) $(wildcard Wm3Wgl*.h)
+INC := $(notdir $(INC))
+SRC := $(wildcard Wm3OpenGL*.cpp) $(wildcard Wm3OpenGL*.c) $(wildcard Wm3Wgl*.cpp) $(wildcard Wm3Wgl*.c)
+SRC := $(notdir $(SRC))
+OBJDIR := $(CONFIG)
+OBJ := $(SRC:%.cpp=$(OBJDIR)/%.o) $(SRC:%.c=$(OBJDIR)/%.o)
+LIB := ../../Library/$(CONFIG)/libWm3WglRenderer.a
+
+build : $(OBJ)
+	$(AR) $(ARFLAGS) $(LIB) $(OBJDIR)/*.o
+	cp -fp $(INC) $(INCDIR)
+
+$(OBJDIR)/%.o : %.cpp
+	@mkdir -p $(CONFIG)
+	$(CC) $(INCPATH) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/%.o : %.c
+	@mkdir -p $(CONFIG)
+	$(GCC) $(INCPATH) $(CFLAGS) $< -o $@
+
+clean :
+	rm -f $(OBJDIR)/*.o

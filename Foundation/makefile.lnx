@@ -1,0 +1,61 @@
+build :
+	@mkdir -p ../Include
+	@mkdir -p ../Library/$(CONFIG)
+	@mkdir -p $(CONFIG)
+	@cp -fp *.h ../Include
+	cd Approximation      ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Collision          ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Containment        ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Controllers        ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Curves             ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Detail             ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Distance           ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Effects            ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd ImageAnalysis      ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Interpolation      ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Intersection       ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Math               ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Meshes             ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Miscellaneous      ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Numerics           ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd ObjectSystem       ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Physics            ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd RationalArithmetic ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd SceneGraph         ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Shaders            ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd SharedArrays       ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Sorting            ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Surfaces           ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd System             ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Terrain            ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Tessellation       ; make CONFIG=$(CONFIG) -f ../makeprj.lnx
+
+clean :
+	cd Approximation      ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Collision          ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Containment        ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Controllers        ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Curves             ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Detail             ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Distance           ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Effects            ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd ImageAnalysis      ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Interpolation      ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Intersection       ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Math               ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Meshes             ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Miscellaneous      ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Numerics           ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd ObjectSystem       ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Physics            ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd RationalArithmetic ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd SceneGraph         ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Shaders            ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd SharedArrays       ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Sorting            ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Surfaces           ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd System             ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Terrain            ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	cd Tessellation       ; make clean CONFIG=$(CONFIG) -f ../makeprj.lnx
+	rm -f $(CONFIG)/*.*
+	rmdir $(CONFIG)

@@ -1,0 +1,33 @@
+CC := /mingw/bin/g++
+CFLAGS := -c -DMINGW
+
+ifeq (,$(findstring Debug,$(CONFIG)))
+    CFLAGS += -O2 -DNDEBUG
+else
+    CFLAGS += -g -D_DEBUG
+endif
+
+ifeq (,$(findstring Memory,$(CONFIG)))
+else
+    CFLAGS += -DWM3_MEMORY_MANAGER
+endif
+
+LIBPATH := -L /mingw/lib -L ../../Library/$(CONFIG)
+INCPATH := -I /mingw/include -I ../../Include
+WLIBS := -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 -lcomctl32
+MLIBS :=  -lWm3WglApplication -lWm3WglRenderer -lWm3Foundation
+GLIBS :=  -lglu32 -lopengl32
+LIBS := $(MLIBS) $(WLIBS) $(GLIBS) -lm
+SRC := $(notdir $(wildcard *.cpp))
+OBJ := $(SRC:%.cpp=$(CONFIG)/%.o)
+
+build : $(OBJ)
+	$(CC) $(LIBPATH) $(OBJ) -o $(APP).$(CONFIG) $(LIBS)
+
+$(CONFIG)/%.o : %.cpp
+	@mkdir -p $(CONFIG)
+	$(CC) $(CFLAGS) $(INCPATH) $< -o $@
+
+clean :
+	rm -f $(CONFIG)/*.o
+	rmdir $(CONFIG)

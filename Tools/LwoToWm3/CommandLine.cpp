@@ -1,0 +1,370 @@
+// Geometric Tools, Inc.
+// http://www.geometrictools.com
+// Copyright (c) 1998-2006.  All Rights Reserved
+//
+// The Wild Magic Library (WM3) source code is supplied under the terms of
+// the license agreement
+//     http://www.geometrictools.com/License/WildMagic3License.pdf
+// and may not be copied or disclosed except in accordance with the terms
+// of that agreement.
+
+#include "CommandLine.h"
+using namespace Wm3;
+
+char CommandLine::ms_acOptionNotFound[] = "option not found";
+char CommandLine::ms_acArgumentRequired[] = "option requires an argument";
+char CommandLine::ms_acArgumentOutOfRange[] = "argument out of range";
+char CommandLine::ms_acFilenameNotFound[] = "filename not found";
+
+//----------------------------------------------------------------------------
+CommandLine::CommandLine (int iQuantity, char** apcArgument)
+{
+    m_iQuantity = iQuantity;
+    m_acCmdline = 0;
+    m_abUsed = 0;
+
+    if ( m_iQuantity > 0 )
+    {
+        m_apcArgument = new char*[m_iQuantity];
+        for (int i = 0; i < m_iQuantity; i++)
+            m_apcArgument[i] = apcArgument[i];
+
+    }
+    else
+    {
+        m_apcArgument = 0;
+    }
+
+    Initialize();
+}
+//----------------------------------------------------------------------------
+CommandLine::CommandLine (char* acCmdline)
+{
+    class Argument
+    {
+    public:
+        char* m_pcItem;
+        Argument* m_pkNext;
+    };
+
+    m_iQuantity = 0;
+    m_apcArgument = 0;
+    m_acCmdline = 0;
+    m_abUsed = 0;
+
+    if ( acCmdline == 0 || strlen(acCmdline) == 0 )
+        return;
+
+    const size_t uiSize = strlen(acCmdline) + 1;
+    m_acCmdline = new char[uiSize];
+    System::Strcpy(m_acCmdline,uiSize,acCmdline);
+
+    char* pcNextToken;
+    char* pcToken = System::Strtok(m_acCmdline," \t",pcNextToken);
+    Argument* pkList = 0;
+
+    while ( pcToken )
+    {
+        m_iQuantity++;
+
+        Argument* pkCurrent = new Argument;
+        pkCurrent->m_pcItem = pcToken;
+        pkCurrent->m_pkNext = pkList;
+        pkList = pkCurrent;
+
+        pcToken = System::Strtok(0," \t",pcNextToken);
+    }
+
+    m_iQuantity++;
+    m_apcArgument = new char*[m_iQuantity];
+    m_apcArgument[0] = m_acCmdline;
+    int i = m_iQuantity-1;
+    while ( pkList )
+    {
+        m_apcArgument[i--] = pkList->m_pcItem;
+        
+        Argument* pkSave = pkList->m_pkNext;
+        delete pkList;
+        pkList = pkSave;
+    }
+
+    Initialize();
+}
+//----------------------------------------------------------------------------
+CommandLine::~CommandLine ()
+{
+    delete[] m_abUsed;
+    delete[] m_apcArgument;
+    delete[] m_acCmdline;
+}
+//----------------------------------------------------------------------------
+void CommandLine::Initialize ()
+{
+    m_abUsed = new bool[m_iQuantity];
+    memset(m_abUsed,false,m_iQuantity*sizeof(bool));
+
+    m_dSmall = 0.0;
+    m_dLarge = 0.0;
+    m_bMinSet = false;
+    m_bMaxSet = false;
+    m_bInfSet = false;
+    m_bSupSet = false;
+
+    m_acLastError = 0;
+}
+//----------------------------------------------------------------------------
+int CommandLine::ExcessArguments ()
+{
+    // checks to see if any command line arguments were not processed
+    for (int i = 1; i < m_iQuantity; i++)
+    {
+        if ( !m_abUsed[i] )
+            return i;
+    }
+
+    return 0;
+}
+//----------------------------------------------------------------------------
+CommandLine& CommandLine::Min (double dValue)
+{
+    m_dSmall = dValue;
+    m_bMinSet = true;
+    return *this;
+}
+//----------------------------------------------------------------------------
+CommandLine& CommandLine::Max (double dValue)
+{
+    m_dLarge = dValue;
+    m_bMaxSet = true;
+    return *this;
+}
+//----------------------------------------------------------------------------
+CommandLine& CommandLine::Inf (double dValue)
+{
+    m_dSmall = dValue;
+    m_bInfSet = true;
+    return *this;
+}
+//----------------------------------------------------------------------------
+CommandLine& CommandLine::Sup (double dValue)
+{
+    m_dLarge = dValue;
+    m_bSupSet = true;
+    return *this;
+}
+//----------------------------------------------------------------------------
+int CommandLine::Boolean (char* acName)
+{
+    bool bValue = false;
+    return Boolean(acName,bValue);
+}
+//----------------------------------------------------------------------------
+int CommandLine::Boolean (char* acName, bool& rbValue)
+{
+    int iMatchFound = 0;
+    rbValue = false;
+    for (int i = 1; i < m_iQuantity; i++)
+    {
+        char* pcTmp = m_apcArgument[i];
+        if ( !m_abUsed[i] && pcTmp[0] == '-' && strcmp(acName,++pcTmp) == 0 )
+        {
+            m_abUsed[i] = true;
+            iMatchFound = i;
+            rbValue = true;
+            break;
+        }
+    }
+
+    if ( iMatchFound == 0 )
+        m_acLastError = ms_acOptionNotFound;
+
+    return iMatchFound;
+}
+//----------------------------------------------------------------------------
+int CommandLine::Integer (char* acName, int& riValue)
+{
+    int iMatchFound = 0;
+    for (int i = 1; i < m_iQuantity; i++)
+    {
+        char* pcTmp = m_apcArgument[i];
+        if ( !m_abUsed[i] && pcTmp[0] == '-' && strcmp(acName,++pcTmp) == 0 )
+        {
+            // get argument
+            pcTmp = m_apcArgument[i+1];
+            if ( m_abUsed[i+1] || (pcTmp[0] == '-' && !isdigit(pcTmp[1])) )
+            {
+                m_acLastError = ms_acArgumentRequired;
+                return 0;
+            }
+            riValue = atoi(pcTmp);
+            if ( (m_bMinSet && riValue < m_dSmall)
+            ||   (m_bMaxSet && riValue > m_dLarge)
+            ||   (m_bInfSet && riValue <= m_dSmall)
+            ||   (m_bSupSet && riValue >= m_dLarge) )
+            {
+                m_acLastError = ms_acArgumentOutOfRange;
+                return 0;
+            }
+            m_abUsed[i] = true;
+            m_abUsed[i+1] = true;
+            iMatchFound = i;
+            break;
+        }
+    }
+
+    m_bMinSet = false;
+    m_bMaxSet = false;
+    m_bInfSet = false;
+    m_bSupSet = false;
+
+    if ( iMatchFound == 0 )
+        m_acLastError = ms_acOptionNotFound;
+
+    return iMatchFound;
+}
+//----------------------------------------------------------------------------
+int CommandLine::Float (char* acName, float& rfValue)
+{
+    int iMatchFound = 0;
+    for (int i = 1; i < m_iQuantity; i++)
+    {
+        char* pcTmp = m_apcArgument[i];
+        if ( !m_abUsed[i] && pcTmp[0] == '-' && strcmp(acName,++pcTmp) == 0 )
+        {
+            // get argument
+            pcTmp = m_apcArgument[i+1];
+            if ( m_abUsed[i+1] || (pcTmp[0] == '-' && !isdigit(pcTmp[1])) )
+            {
+                m_acLastError = ms_acArgumentRequired;
+                return 0;
+            }
+            rfValue = (float)atof(pcTmp);
+            if ( (m_bMinSet && rfValue < m_dSmall)
+            ||   (m_bMaxSet && rfValue > m_dLarge)
+            ||   (m_bInfSet && rfValue <= m_dSmall)
+            ||   (m_bSupSet && rfValue >= m_dLarge) )
+            {
+                m_acLastError = ms_acArgumentOutOfRange;
+                return 0;
+            }
+            m_abUsed[i] = true;
+            m_abUsed[i+1] = true;
+            iMatchFound = i;
+            break;
+        }
+    }
+
+    m_bMinSet = false;
+    m_bMaxSet = false;
+    m_bInfSet = false;
+    m_bSupSet = false;
+
+    if ( iMatchFound == 0 )
+        m_acLastError = ms_acOptionNotFound;
+
+    return iMatchFound;
+}
+//----------------------------------------------------------------------------
+int CommandLine::Double (char* acName, double& rdValue)
+{
+    int iMatchFound = 0;
+    for (int i = 1; i < m_iQuantity; i++)
+    {
+        char* pcTmp = m_apcArgument[i];
+        if ( !m_abUsed[i] && pcTmp[0] == '-' && strcmp(acName,++pcTmp) == 0 )
+        {
+            // get argument
+            pcTmp = m_apcArgument[i+1];
+            if ( m_abUsed[i+1] || (pcTmp[0] == '-' && !isdigit(pcTmp[1])) )
+            {
+                m_acLastError = ms_acArgumentRequired;
+                return 0;
+            }
+            rdValue = atof(pcTmp);
+            if ( (m_bMinSet && rdValue < m_dSmall)
+            ||   (m_bMaxSet && rdValue > m_dLarge)
+            ||   (m_bInfSet && rdValue <= m_dSmall)
+            ||   (m_bSupSet && rdValue >= m_dLarge) )
+            {
+                m_acLastError = ms_acArgumentOutOfRange;
+                return 0;
+            }
+            m_abUsed[i] = true;
+            m_abUsed[i+1] = true;
+            iMatchFound = i;
+            break;
+        }
+    }
+
+    m_bMinSet = false;
+    m_bMaxSet = false;
+    m_bInfSet = false;
+    m_bSupSet = false;
+
+    if ( iMatchFound == 0 )
+        m_acLastError = ms_acOptionNotFound;
+
+    return iMatchFound;
+}
+//----------------------------------------------------------------------------
+int CommandLine::String (char* acName, char*& racValue)
+{
+    int iMatchFound = 0;
+    for (int i = 1; i < m_iQuantity; i++)
+    {
+        char* pcTmp = m_apcArgument[i];
+        if ( !m_abUsed[i] && pcTmp[0] == '-' && strcmp(acName,++pcTmp) == 0 )
+        {
+            // get argument
+            pcTmp = m_apcArgument[i+1];
+            if ( m_abUsed[i+1] || pcTmp[0] == '-' )
+            {
+                m_acLastError = ms_acArgumentRequired;
+                return 0;
+            }
+
+            const size_t uiSize = strlen(pcTmp) + 1;
+            racValue = new char[uiSize];
+            System::Strcpy(racValue,uiSize,pcTmp);
+            m_abUsed[i] = true;
+            m_abUsed[i+1] = true;
+            iMatchFound = i;
+            break;
+        }
+    }
+
+    if ( iMatchFound == 0 )
+        m_acLastError = ms_acOptionNotFound;
+
+    return iMatchFound;
+}
+//----------------------------------------------------------------------------
+int CommandLine::Filename (char*& racName)
+{
+    int iMatchFound = 0;
+    for (int i = 1; i < m_iQuantity; i++)
+    {
+        char* pcTmp = m_apcArgument[i];
+        if ( !m_abUsed[i] && pcTmp[0] != '-' )
+        {
+            const size_t uiSize = strlen(pcTmp) + 1;
+            racName = new char[uiSize];
+            System::Strcpy(racName,uiSize,pcTmp);
+            m_abUsed[i] = true;
+            iMatchFound = i;
+            break;
+        }
+    }
+
+    if ( iMatchFound == 0 )
+        m_acLastError = ms_acFilenameNotFound;
+
+    return iMatchFound;
+}
+//----------------------------------------------------------------------------
+const char* CommandLine::GetLastError ()
+{
+    return m_acLastError;
+}
+//----------------------------------------------------------------------------
+

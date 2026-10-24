@@ -1,0 +1,355 @@
+{ WGL_ARB_buffer_region
+@v #define WGL_FRONT_COLOR_BUFFER_BIT_ARB 0x00000001
+@v #define WGL_BACK_COLOR_BUFFER_BIT_ARB  0x00000002
+@v #define WGL_DEPTH_BUFFER_BIT_ARB       0x00000004
+@v #define WGL_STENCIL_BUFFER_BIT_ARB     0x00000008
+@f HANDLE wglCreateBufferRegionARB (HDC, int, UINT);
+@f VOID wglDeleteBufferRegionARB (HANDLE);
+@f BOOL wglSaveBufferRegionARB (HANDLE, int, int, int, int);
+@f BOOL wglRestoreBufferRegionARB (HANDLE, int, int, int, int, int, int);
+}
+
+{ WGL_ARB_multisample
+@v #define WGL_SAMPLE_BUFFERS_ARB         0x2041
+@v #define WGL_SAMPLES_ARB                0x2042
+}
+
+{ WGL_ARB_extensions_string
+@f const char* wglGetExtensionsStringARB (HDC);
+}
+
+{ WGL_ARB_pixel_format
+@v #define WGL_NUMBER_PIXEL_FORMATS_ARB    0x2000
+@v #define WGL_DRAW_TO_WINDOW_ARB          0x2001
+@v #define WGL_DRAW_TO_BITMAP_ARB          0x2002
+@v #define WGL_ACCELERATION_ARB            0x2003
+@v #define WGL_NEED_PALETTE_ARB            0x2004
+@v #define WGL_NEED_SYSTEM_PALETTE_ARB     0x2005
+@v #define WGL_SWAP_LAYER_BUFFERS_ARB      0x2006
+@v #define WGL_SWAP_METHOD_ARB             0x2007
+@v #define WGL_NUMBER_OVERLAYS_ARB         0x2008
+@v #define WGL_NUMBER_UNDERLAYS_ARB        0x2009
+@v #define WGL_TRANSPARENT_ARB             0x200A
+@v #define WGL_TRANSPARENT_RED_VALUE_ARB   0x2037
+@v #define WGL_TRANSPARENT_GREEN_VALUE_ARB 0x2038
+@v #define WGL_TRANSPARENT_BLUE_VALUE_ARB  0x2039
+@v #define WGL_TRANSPARENT_ALPHA_VALUE_ARB 0x203A
+@v #define WGL_TRANSPARENT_INDEX_VALUE_ARB 0x203B
+@v #define WGL_SHARE_DEPTH_ARB             0x200C
+@v #define WGL_SHARE_STENCIL_ARB           0x200D
+@v #define WGL_SHARE_ACCUM_ARB             0x200E
+@v #define WGL_SUPPORT_GDI_ARB             0x200F
+@v #define WGL_SUPPORT_OPENGL_ARB          0x2010
+@v #define WGL_DOUBLE_BUFFER_ARB           0x2011
+@v #define WGL_STEREO_ARB                  0x2012
+@v #define WGL_PIXEL_TYPE_ARB              0x2013
+@v #define WGL_COLOR_BITS_ARB              0x2014
+@v #define WGL_RED_BITS_ARB                0x2015
+@v #define WGL_RED_SHIFT_ARB               0x2016
+@v #define WGL_GREEN_BITS_ARB              0x2017
+@v #define WGL_GREEN_SHIFT_ARB             0x2018
+@v #define WGL_BLUE_BITS_ARB               0x2019
+@v #define WGL_BLUE_SHIFT_ARB              0x201A
+@v #define WGL_ALPHA_BITS_ARB              0x201B
+@v #define WGL_ALPHA_SHIFT_ARB             0x201C
+@v #define WGL_ACCUM_BITS_ARB              0x201D
+@v #define WGL_ACCUM_RED_BITS_ARB          0x201E
+@v #define WGL_ACCUM_GREEN_BITS_ARB        0x201F
+@v #define WGL_ACCUM_BLUE_BITS_ARB         0x2020
+@v #define WGL_ACCUM_ALPHA_BITS_ARB        0x2021
+@v #define WGL_DEPTH_BITS_ARB              0x2022
+@v #define WGL_STENCIL_BITS_ARB            0x2023
+@v #define WGL_AUX_BUFFERS_ARB             0x2024
+@v #define WGL_NO_ACCELERATION_ARB         0x2025
+@v #define WGL_GENERIC_ACCELERATION_ARB    0x2026
+@v #define WGL_FULL_ACCELERATION_ARB       0x2027
+@v #define WGL_SWAP_EXCHANGE_ARB           0x2028
+@v #define WGL_SWAP_COPY_ARB               0x2029
+@v #define WGL_SWAP_UNDEFINED_ARB          0x202A
+@v #define WGL_TYPE_RGBA_ARB               0x202B
+@v #define WGL_TYPE_COLORINDEX_ARB         0x202C
+@f BOOL wglGetPixelFormatAttribivARB (HDC, int, int, UINT, const int*, int*);
+@f BOOL wglGetPixelFormatAttribfvARB (HDC, int, int, UINT, const int*, FLOAT*);
+@f BOOL wglChoosePixelFormatARB (HDC, const int*, const FLOAT*, UINT, int*, UINT*);
+}
+
+{ WGL_ARB_make_current_read
+@v #define ERROR_INVALID_PIXEL_TYPE_ARB            0x2043
+@v #define ERROR_INCOMPATIBLE_DEVICE_CONTEXTS_ARB  0x2054
+@f BOOL wglMakeContextCurrentARB (HDC, HDC, HGLRC);
+@f HDC wglGetCurrentReadDCARB (void);
+}
+
+{ WGL_ARB_pbuffer
+@v #define WGL_DRAW_TO_PBUFFER_ARB        0x202D
+@v #define WGL_MAX_PBUFFER_PIXELS_ARB     0x202E
+@v #define WGL_MAX_PBUFFER_WIDTH_ARB      0x202F
+@v #define WGL_MAX_PBUFFER_HEIGHT_ARB     0x2030
+@v #define WGL_PBUFFER_LARGEST_ARB        0x2033
+@v #define WGL_PBUFFER_WIDTH_ARB          0x2034
+@v #define WGL_PBUFFER_HEIGHT_ARB         0x2035
+@v #define WGL_PBUFFER_LOST_ARB           0x2036
+@v DECLARE_HANDLE(HPBUFFERARB);
+@f HPBUFFERARB wglCreatePbufferARB (HDC, int, int, int, const int*);
+@f HDC wglGetPbufferDCARB (HPBUFFERARB);
+@f int wglReleasePbufferDCARB (HPBUFFERARB, HDC);
+@f BOOL wglDestroyPbufferARB (HPBUFFERARB);
+@f BOOL wglQueryPbufferARB (HPBUFFERARB, int, int*);
+}
+
+{ WGL_ARB_render_texture
+@v #define WGL_BIND_TO_TEXTURE_RGB_ARB         0x2070
+@v #define WGL_BIND_TO_TEXTURE_RGBA_ARB        0x2071
+@v #define WGL_TEXTURE_FORMAT_ARB              0x2072
+@v #define WGL_TEXTURE_TARGET_ARB              0x2073
+@v #define WGL_MIPMAP_TEXTURE_ARB              0x2074
+@v #define WGL_TEXTURE_RGB_ARB                 0x2075
+@v #define WGL_TEXTURE_RGBA_ARB                0x2076
+@v #define WGL_NO_TEXTURE_ARB                  0x2077
+@v #define WGL_TEXTURE_CUBE_MAP_ARB            0x2078
+@v #define WGL_TEXTURE_1D_ARB                  0x2079
+@v #define WGL_TEXTURE_2D_ARB                  0x207A
+@v #define WGL_MIPMAP_LEVEL_ARB                0x207B
+@v #define WGL_CUBE_MAP_FACE_ARB               0x207C
+@v #define WGL_TEXTURE_CUBE_MAP_POSITIVE_X_ARB 0x207D
+@v #define WGL_TEXTURE_CUBE_MAP_NEGATIVE_X_ARB 0x207E
+@v #define WGL_TEXTURE_CUBE_MAP_POSITIVE_Y_ARB 0x207F
+@v #define WGL_TEXTURE_CUBE_MAP_NEGATIVE_Y_ARB 0x2080
+@v #define WGL_TEXTURE_CUBE_MAP_POSITIVE_Z_ARB 0x2081
+@v #define WGL_TEXTURE_CUBE_MAP_NEGATIVE_Z_ARB 0x2082
+@v #define WGL_FRONT_LEFT_ARB                  0x2083
+@v #define WGL_FRONT_RIGHT_ARB                 0x2084
+@v #define WGL_BACK_LEFT_ARB                   0x2085
+@v #define WGL_BACK_RIGHT_ARB                  0x2086
+@v #define WGL_AUX0_ARB                        0x2087
+@v #define WGL_AUX1_ARB                        0x2088
+@v #define WGL_AUX2_ARB                        0x2089
+@v #define WGL_AUX3_ARB                        0x208A
+@v #define WGL_AUX4_ARB                        0x208B
+@v #define WGL_AUX5_ARB                        0x208C
+@v #define WGL_AUX6_ARB                        0x208D
+@v #define WGL_AUX7_ARB                        0x208E
+@v #define WGL_AUX8_ARB                        0x208F
+@v #define WGL_AUX9_ARB                        0x2090
+@f BOOL wglBindTexImageARB (HPBUFFERARB, int);
+@f BOOL wglReleaseTexImageARB (HPBUFFERARB, int);
+@f BOOL wglSetPbufferAttribARB (HPBUFFERARB, const int*);
+}
+
+{ WGL_ARB_pixel_format_float
+@v #define WGL_TYPE_RGBA_FLOAT_ARB        0x21A0
+}
+
+{ WGL_EXT_make_current_read
+@v #define ERROR_INVALID_PIXEL_TYPE_EXT   0x2043
+@f BOOL wglMakeContextCurrentEXT (HDC, HDC, HGLRC);
+@f HDC wglGetCurrentReadDCEXT (void);
+}
+
+{ WGL_EXT_pixel_format
+@v #define WGL_NUMBER_PIXEL_FORMATS_EXT   0x2000
+@v #define WGL_DRAW_TO_WINDOW_EXT         0x2001
+@v #define WGL_DRAW_TO_BITMAP_EXT         0x2002
+@v #define WGL_ACCELERATION_EXT           0x2003
+@v #define WGL_NEED_PALETTE_EXT           0x2004
+@v #define WGL_NEED_SYSTEM_PALETTE_EXT    0x2005
+@v #define WGL_SWAP_LAYER_BUFFERS_EXT     0x2006
+@v #define WGL_SWAP_METHOD_EXT            0x2007
+@v #define WGL_NUMBER_OVERLAYS_EXT        0x2008
+@v #define WGL_NUMBER_UNDERLAYS_EXT       0x2009
+@v #define WGL_TRANSPARENT_EXT            0x200A
+@v #define WGL_TRANSPARENT_VALUE_EXT      0x200B
+@v #define WGL_SHARE_DEPTH_EXT            0x200C
+@v #define WGL_SHARE_STENCIL_EXT          0x200D
+@v #define WGL_SHARE_ACCUM_EXT            0x200E
+@v #define WGL_SUPPORT_GDI_EXT            0x200F
+@v #define WGL_SUPPORT_OPENGL_EXT         0x2010
+@v #define WGL_DOUBLE_BUFFER_EXT          0x2011
+@v #define WGL_STEREO_EXT                 0x2012
+@v #define WGL_PIXEL_TYPE_EXT             0x2013
+@v #define WGL_COLOR_BITS_EXT             0x2014
+@v #define WGL_RED_BITS_EXT               0x2015
+@v #define WGL_RED_SHIFT_EXT              0x2016
+@v #define WGL_GREEN_BITS_EXT             0x2017
+@v #define WGL_GREEN_SHIFT_EXT            0x2018
+@v #define WGL_BLUE_BITS_EXT              0x2019
+@v #define WGL_BLUE_SHIFT_EXT             0x201A
+@v #define WGL_ALPHA_BITS_EXT             0x201B
+@v #define WGL_ALPHA_SHIFT_EXT            0x201C
+@v #define WGL_ACCUM_BITS_EXT             0x201D
+@v #define WGL_ACCUM_RED_BITS_EXT         0x201E
+@v #define WGL_ACCUM_GREEN_BITS_EXT       0x201F
+@v #define WGL_ACCUM_BLUE_BITS_EXT        0x2020
+@v #define WGL_ACCUM_ALPHA_BITS_EXT       0x2021
+@v #define WGL_DEPTH_BITS_EXT             0x2022
+@v #define WGL_STENCIL_BITS_EXT           0x2023
+@v #define WGL_AUX_BUFFERS_EXT            0x2024
+@v #define WGL_NO_ACCELERATION_EXT        0x2025
+@v #define WGL_GENERIC_ACCELERATION_EXT   0x2026
+@v #define WGL_FULL_ACCELERATION_EXT      0x2027
+@v #define WGL_SWAP_EXCHANGE_EXT          0x2028
+@v #define WGL_SWAP_COPY_EXT              0x2029
+@v #define WGL_SWAP_UNDEFINED_EXT         0x202A
+@v #define WGL_TYPE_RGBA_EXT              0x202B
+@v #define WGL_TYPE_COLORINDEX_EXT        0x202C
+@f BOOL wglGetPixelFormatAttribivEXT (HDC, int, int, UINT, int*, int*);
+@f BOOL wglGetPixelFormatAttribfvEXT (HDC, int, int, UINT, int*, FLOAT*);
+@f BOOL wglChoosePixelFormatEXT (HDC, const int*, const FLOAT*, UINT, int*, UINT*);
+}
+
+{ WGL_EXT_pbuffer
+@v #define WGL_DRAW_TO_PBUFFER_EXT        0x202D
+@v #define WGL_MAX_PBUFFER_PIXELS_EXT     0x202E
+@v #define WGL_MAX_PBUFFER_WIDTH_EXT      0x202F
+@v #define WGL_MAX_PBUFFER_HEIGHT_EXT     0x2030
+@v #define WGL_OPTIMAL_PBUFFER_WIDTH_EXT  0x2031
+@v #define WGL_OPTIMAL_PBUFFER_HEIGHT_EXT 0x2032
+@v #define WGL_PBUFFER_LARGEST_EXT        0x2033
+@v #define WGL_PBUFFER_WIDTH_EXT          0x2034
+@v #define WGL_PBUFFER_HEIGHT_EXT         0x2035
+@v DECLARE_HANDLE(HPBUFFEREXT);
+@f HPBUFFEREXT wglCreatePbufferEXT (HDC, int, int, int, const int*);
+@f HDC wglGetPbufferDCEXT (HPBUFFEREXT);
+@f int wglReleasePbufferDCEXT (HPBUFFEREXT, HDC);
+@f BOOL wglDestroyPbufferEXT (HPBUFFEREXT);
+@f BOOL wglQueryPbufferEXT (HPBUFFEREXT, int, int*);
+}
+
+{ WGL_EXT_depth_float
+@v #define WGL_DEPTH_FLOAT_EXT            0x2040
+}
+
+{ WGL_3DFX_multisample
+@v #define WGL_SAMPLE_BUFFERS_3DFX        0x2060
+@v #define WGL_SAMPLES_3DFX               0x2061
+}
+
+{ WGL_EXT_multisample
+@v #define WGL_SAMPLE_BUFFERS_EXT         0x2041
+@v #define WGL_SAMPLES_EXT                0x2042
+}
+
+{ WGL_I3D_digital_video_control
+@v #define WGL_DIGITAL_VIDEO_CURSOR_ALPHA_FRAMEBUFFER_I3D  0x2050
+@v #define WGL_DIGITAL_VIDEO_CURSOR_ALPHA_VALUE_I3D        0x2051
+@v #define WGL_DIGITAL_VIDEO_CURSOR_INCLUDED_I3D           0x2052
+@v #define WGL_DIGITAL_VIDEO_GAMMA_CORRECTED_I3D           0x2053
+@f BOOL wglGetDigitalVideoParametersI3D (HDC, int, int*);
+@f BOOL wglSetDigitalVideoParametersI3D (HDC, int, const int*);
+}
+
+{ WGL_I3D_gamma
+@v #define WGL_GAMMA_TABLE_SIZE_I3D       0x204E
+@v #define WGL_GAMMA_EXCLUDE_DESKTOP_I3D  0x204F
+@f BOOL wglGetGammaTableParametersI3D (HDC, int, int*);
+@f BOOL wglSetGammaTableParametersI3D (HDC, int, const int*);
+@f BOOL wglGetGammaTableI3D (HDC, int, USHORT*, USHORT*, USHORT*);
+@f BOOL wglSetGammaTableI3D (HDC, int, const USHORT*, const USHORT*, const USHORT*);
+}
+
+{ WGL_I3D_genlock
+@v #define WGL_GENLOCK_SOURCE_MULTIVIEW_I3D        0x2044
+@v #define WGL_GENLOCK_SOURCE_EXTENAL_SYNC_I3D     0x2045
+@v #define WGL_GENLOCK_SOURCE_EXTENAL_FIELD_I3D    0x2046
+@v #define WGL_GENLOCK_SOURCE_EXTENAL_TTL_I3D      0x2047
+@v #define WGL_GENLOCK_SOURCE_DIGITAL_SYNC_I3D     0x2048
+@v #define WGL_GENLOCK_SOURCE_DIGITAL_FIELD_I3D    0x2049
+@v #define WGL_GENLOCK_SOURCE_EDGE_FALLING_I3D     0x204A
+@v #define WGL_GENLOCK_SOURCE_EDGE_RISING_I3D      0x204B
+@v #define WGL_GENLOCK_SOURCE_EDGE_BOTH_I3D        0x204C
+@f BOOL wglEnableGenlockI3D (HDC);
+@f BOOL wglDisableGenlockI3D (HDC);
+@f BOOL wglIsEnabledGenlockI3D (HDC, BOOL*);
+@f BOOL wglGenlockSourceI3D (HDC, UINT);
+@f BOOL wglGetGenlockSourceI3D (HDC, UINT*);
+@f BOOL wglGenlockSourceEdgeI3D (HDC, UINT);
+@f BOOL wglGetGenlockSourceEdgeI3D (HDC, UINT*);
+@f BOOL wglGenlockSampleRateI3D (HDC, UINT);
+@f BOOL wglGetGenlockSampleRateI3D (HDC, UINT*);
+@f BOOL wglGenlockSourceDelayI3D (HDC, UINT);
+@f BOOL wglGetGenlockSourceDelayI3D (HDC, UINT*);
+@f BOOL wglQueryGenlockMaxSourceDelayI3D (HDC, UINT*, UINT*);
+}
+
+{ WGL_I3D_image_buffer
+@v #define WGL_IMAGE_BUFFER_MIN_ACCESS_I3D 0x00000001
+@v #define WGL_IMAGE_BUFFER_LOCK_I3D       0x00000002
+@f LPVOID wglCreateImageBufferI3D (HDC, DWORD, UINT);
+@f BOOL wglDestroyImageBufferI3D (HDC, LPVOID);
+@f BOOL wglAssociateImageBufferEventsI3D (HDC, const HANDLE*, const LPVOID*, const DWORD*, UINT);
+@f BOOL wglReleaseImageBufferEventsI3D (HDC, const LPVOID*, UINT);
+}
+
+{ WGL_I3D_swap_frame_lock
+@f BOOL wglEnableFrameLockI3D (void);
+@f BOOL wglDisableFrameLockI3D (void);
+@f BOOL wglIsEnabledFrameLockI3D (BOOL*);
+@f BOOL wglQueryFrameLockMasterI3D (BOOL*);
+}
+
+{ WGL_I3D_swap_frame_usage
+@f BOOL wglGetFrameUsageI3D (float*);
+@f BOOL wglBeginFrameTrackingI3D (void);
+@f BOOL wglEndFrameTrackingI3D (void);
+@f BOOL wglQueryFrameTrackingI3D (DWORD*, DWORD*, float*);
+}
+
+{ WGL_NV_render_depth_texture
+@v #define WGL_BIND_TO_TEXTURE_DEPTH_NV            0x20A3
+@v #define WGL_BIND_TO_TEXTURE_RECTANGLE_DEPTH_NV  0x20A4
+@v #define WGL_DEPTH_TEXTURE_FORMAT_NV             0x20A5
+@v #define WGL_TEXTURE_DEPTH_COMPONENT_NV          0x20A6
+@v #define WGL_DEPTH_COMPONENT_NV                  0x20A7
+}
+
+{ WGL_NV_render_texture_rectangle
+@v #define WGL_BIND_TO_TEXTURE_RECTANGLE_RGB_NV    0x20A0
+@v #define WGL_BIND_TO_TEXTURE_RECTANGLE_RGBA_NV   0x20A1
+@v #define WGL_TEXTURE_RECTANGLE_NV                0x20A2
+}
+
+{ WGL_ATI_pixel_format_float
+@v #define WGL_TYPE_RGBA_FLOAT_ATI        0x21A0
+}
+
+{ WGL_NV_float_buffer
+@v #define WGL_FLOAT_COMPONENTS_NV                     0x20B0
+@v #define WGL_BIND_TO_TEXTURE_RECTANGLE_FLOAT_R_NV    0x20B1
+@v #define WGL_BIND_TO_TEXTURE_RECTANGLE_FLOAT_RG_NV   0x20B2
+@v #define WGL_BIND_TO_TEXTURE_RECTANGLE_FLOAT_RGB_NV  0x20B3
+@v #define WGL_BIND_TO_TEXTURE_RECTANGLE_FLOAT_RGBA_NV 0x20B4
+@v #define WGL_TEXTURE_FLOAT_R_NV                      0x20B5
+@v #define WGL_TEXTURE_FLOAT_RG_NV                     0x20B6
+@v #define WGL_TEXTURE_FLOAT_RGB_NV                    0x20B7
+@v #define WGL_TEXTURE_FLOAT_RGBA_NV                   0x20B8
+}
+
+{ WGL_EXT_display_color_table
+@f GLboolean wglCreateDisplayColorTableEXT (GLushort);
+@f GLboolean wglLoadDisplayColorTableEXT (const GLushort*, GLuint);
+@f GLboolean wglBindDisplayColorTableEXT (GLushort);
+@f VOID wglDestroyDisplayColorTableEXT (GLushort);
+}
+
+{ WGL_EXT_extensions_string
+@f const char* wglGetExtensionsStringEXT (void);
+}
+
+{ WGL_EXT_swap_control
+@f BOOL wglSwapIntervalEXT (int);
+@f int wglGetSwapIntervalEXT (void);
+}
+
+{ WGL_NV_vertex_array_range
+@f void* wglAllocateMemoryNV (GLsizei, GLfloat, GLfloat, GLfloat);
+@f void wglFreeMemoryNV (void*);
+}
+
+{ WGL_OML_sync_control
+@f BOOL wglGetSyncValuesOML (HDC, INT64*, INT64*, INT64*);
+@f BOOL wglGetMscRateOML (HDC, INT32*, INT32*);
+@f INT64 wglSwapBuffersMscOML (HDC, INT64, INT64, INT64);
+@f INT64 wglSwapLayerBuffersMscOML (HDC, int, INT64, INT64, INT64);
+@f BOOL wglWaitForMscOML (HDC, INT64, INT64, INT64, INT64*, INT64*, INT64*);
+@f BOOL wglWaitForSbcOML (HDC, INT64, INT64*, INT64*, INT64*);
+}

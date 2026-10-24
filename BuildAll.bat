@@ -1,0 +1,12 @@
+WildMagicInstaller -m msvc80 -g opengl  -c debug       >> compiler.txt
+WildMagicInstaller -m msvc80 -g opengl  -c debugdll    >> compiler.txt
+WildMagicInstaller -m msvc80 -g opengl  -c debugmem    >> compiler.txt
+WildMagicInstaller -m msvc80 -g opengl  -c release     >> compiler.txt
+WildMagicInstaller -m msvc80 -g opengl  -c releasedll  >> compiler.txt
+WildMagicInstaller -m msvc80 -g opengl  -c releasemem  >> compiler.txt
+WildMagicInstaller -m msvc80 -g directx -c debug       >> compiler.txt
+WildMagicInstaller -m msvc80 -g directx -c debugdll    >> compiler.txt
+WildMagicInstaller -m msvc80 -g directx -c debugmem    >> compiler.txt
+WildMagicInstaller -m msvc80 -g directx -c release     >> compiler.txt
+WildMagicInstaller -m msvc80 -g directx -c releasedll  >> compiler.txt
+WildMagicInstaller -m msvc80 -g directx -c releasemem  >> compiler.txt

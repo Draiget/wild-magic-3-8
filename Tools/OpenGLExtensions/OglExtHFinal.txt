@@ -1,0 +1,32 @@
+
+/*--------------------------------------------------------------------------*/
+#ifdef __APPLE__
+#include <OpenGL/glu.h>
+#else
+#include <GL/glu.h>
+#endif
+/*--------------------------------------------------------------------------*/
+void* GetFunctionPointer (const char*);
+void InitializeOpenGL ();
+/*--------------------------------------------------------------------------*/
+
+#ifdef __cplusplus
+}
+#endif
+
+#ifdef WM3_DEFINED_APIENTRY
+#undef WM3_DEFINED_APIENTRY
+#undef APIENTRY
+#endif
+
+#ifdef WM3_DEFINED_CALLBACK
+#undef WM3_DEFINED_CALLBACK
+#undef CALLBACK
+#endif
+
+#ifdef WM3_DEFINED_WINGDIAPI
+#undef WM3_DEFINED_WINGDIAPI
+#undef WINGDIAPI
+#endif
+
+#endif 

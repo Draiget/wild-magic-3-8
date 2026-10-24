@@ -1,0 +1,15 @@
+
+/*--------------------------------------------------------------------------*/
+void InitializeWgl ();
+/*--------------------------------------------------------------------------*/
+
+#ifdef __cplusplus
+}
+#endif
+
+#ifdef WM3_DEFINED_WINAPI
+#undef WM3_DEFINED_WINAPI
+#undef WINAPI
+#endif
+
+#endif

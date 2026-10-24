@@ -1,0 +1,27 @@
+build :
+	@mkdir -p Include
+	@mkdir -p Library/$(CONFIG)
+	cd Foundation               && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd Renderers/OpenGLRenderer && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd Applications             && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleGraphics           && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd SamplePhysics            && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleShaders            && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleImagics            && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleMiscellaneous      && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+	cd Tools                    && $(MAKE) -f makefile.sgi CONFIG=$(CONFIG)
+
+clean :
+	cd Foundation               && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd Renderers/OpenGLRenderer && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd Applications             && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleGraphics           && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd SamplePhysics            && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleShaders            && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleImagics            && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd SampleMiscellaneous      && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	cd Tools                    && $(MAKE) clean -f makefile.sgi CONFIG=$(CONFIG)
+	rm -f Include/*.*
+	rm -f Library/$(CONFIG)/*.*
+	@rmdir Include
+	@rmdir Library/$(CONFIG)

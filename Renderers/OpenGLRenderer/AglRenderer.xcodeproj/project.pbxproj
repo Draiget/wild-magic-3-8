@@ -1,0 +1,1264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C3BF89B0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BF89A0842D0CE00B65C6D /* Wm3AglExtensions.c */; };
+		3C3BF89C0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BF89A0842D0CE00B65C6D /* Wm3AglExtensions.c */; };
+		3C3BF89D0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BF89A0842D0CE00B65C6D /* Wm3AglExtensions.c */; };
+		3C3BF89E0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BF89A0842D0CE00B65C6D /* Wm3AglExtensions.c */; };
+		3C6FBA2A083E492C0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBA29083E492C0068AA05 /* Carbon.framework */; };
+		3C6FBA2B083E492C0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBA29083E492C0068AA05 /* Carbon.framework */; };
+		3C6FBA2F083E49470068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBA2E083E49470068AA05 /* AGL.framework */; };
+		3C6FBA30083E49470068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBA2E083E49470068AA05 /* AGL.framework */; };
+		3C6FBA34083E496B0068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBA33083E496B0068AA05 /* DrawSprocket.framework */; };
+		3C6FBA35083E496B0068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBA33083E496B0068AA05 /* DrawSprocket.framework */; };
+		3C9DBBA0083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBB9F083D29AD006BA80C /* Wm3OpenGLExtensions.h */; };
+		3C9DBBA1083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBB9F083D29AD006BA80C /* Wm3OpenGLExtensions.h */; };
+		3C9DBBA2083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBB9F083D29AD006BA80C /* Wm3OpenGLExtensions.h */; };
+		3C9DBBA3083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBB9F083D29AD006BA80C /* Wm3OpenGLExtensions.h */; };
+		3C9DBBC3083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBBC1083D3E38006BA80C /* Wm3OpenGLExtensions.c */; };
+		3C9DBBC5083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBBC1083D3E38006BA80C /* Wm3OpenGLExtensions.c */; };
+		3C9DBBC7083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBBC1083D3E38006BA80C /* Wm3OpenGLExtensions.c */; };
+		3C9DBBC9083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBBC1083D3E38006BA80C /* Wm3OpenGLExtensions.c */; };
+		3CB87C820966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C7F0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h */; };
+		3CB87C830966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CB87C800966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp */; };
+		3CB87C840966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C810966DBA8008F5898 /* Wm3OpenGLRendererPCH.h */; };
+		3CB87C850966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C7F0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h */; };
+		3CB87C860966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CB87C800966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp */; };
+		3CB87C870966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C810966DBA8008F5898 /* Wm3OpenGLRendererPCH.h */; };
+		3CB87C880966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C7F0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h */; };
+		3CB87C890966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CB87C800966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp */; };
+		3CB87C8A0966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C810966DBA8008F5898 /* Wm3OpenGLRendererPCH.h */; };
+		3CB87C8B0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C7F0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h */; };
+		3CB87C8C0966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CB87C800966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp */; };
+		3CB87C8D0966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB87C810966DBA8008F5898 /* Wm3OpenGLRendererPCH.h */; };
+		3CC36EED0846BC5C003C3D9C /* libWm3FoundationDebug.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC36EEC0846BC5C003C3D9C /* libWm3FoundationDebug.dylib */; };
+		3CC36EF10846BC80003C3D9C /* libWm3FoundationRelease.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC36EF00846BC80003C3D9C /* libWm3FoundationRelease.dylib */; };
+		3CCDAADA083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD5083C47FD009E5F14 /* Wm3AglPBuffer.cpp */; };
+		3CCDAADB083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD6083C47FD009E5F14 /* Wm3AglPBuffer.h */; };
+		3CCDAADC083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD7083C47FD009E5F14 /* Wm3AglRenderer.cpp */; };
+		3CCDAADD083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD8083C47FD009E5F14 /* Wm3AglRenderer.h */; };
+		3CCDAADF083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD5083C47FD009E5F14 /* Wm3AglPBuffer.cpp */; };
+		3CCDAAE0083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD6083C47FD009E5F14 /* Wm3AglPBuffer.h */; };
+		3CCDAAE1083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD7083C47FD009E5F14 /* Wm3AglRenderer.cpp */; };
+		3CCDAAE2083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD8083C47FD009E5F14 /* Wm3AglRenderer.h */; };
+		3CCDAAE4083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD5083C47FD009E5F14 /* Wm3AglPBuffer.cpp */; };
+		3CCDAAE5083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD6083C47FD009E5F14 /* Wm3AglPBuffer.h */; };
+		3CCDAAE6083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD7083C47FD009E5F14 /* Wm3AglRenderer.cpp */; };
+		3CCDAAE7083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD8083C47FD009E5F14 /* Wm3AglRenderer.h */; };
+		3CCDAAE9083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD5083C47FD009E5F14 /* Wm3AglPBuffer.cpp */; };
+		3CCDAAEA083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD6083C47FD009E5F14 /* Wm3AglPBuffer.h */; };
+		3CCDAAEB083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDAAD7083C47FD009E5F14 /* Wm3AglRenderer.cpp */; };
+		3CCDAAEC083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDAAD8083C47FD009E5F14 /* Wm3AglRenderer.h */; };
+		742F0B3707F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2107F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp */; };
+		742F0B3807F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2207F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp */; };
+		742F0B3907F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2307F4887500E4DBBA /* Wm3OpenGLCullState.cpp */; };
+		742F0B3A07F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2407F4887500E4DBBA /* Wm3OpenGLDitherState.cpp */; };
+		742F0B3B07F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2507F4887500E4DBBA /* Wm3OpenGLDrawText.cpp */; };
+		742F0B3C07F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2607F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp */; };
+		742F0B3D07F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2707F4887500E4DBBA /* Wm3OpenGLFogState.cpp */; };
+		742F0B3E07F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2807F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp */; };
+		742F0B4007F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2A07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp */; };
+		742F0B4107F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2B07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp */; };
+		742F0B4207F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2C07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp */; };
+		742F0B4307F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2D07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp */; };
+		742F0B4407F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2E07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp */; };
+		742F0B4507F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 742F0B2F07F4887500E4DBBA /* Wm3OpenGLRenderer.h */; };
+		742F0B4607F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3007F4887500E4DBBA /* Wm3OpenGLShadeState.cpp */; };
+		742F0B4707F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3107F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp */; };
+		742F0B4807F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3207F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp */; };
+		742F0B4D07F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2107F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp */; };
+		742F0B4E07F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2207F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp */; };
+		742F0B4F07F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2307F4887500E4DBBA /* Wm3OpenGLCullState.cpp */; };
+		742F0B5007F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2407F4887500E4DBBA /* Wm3OpenGLDitherState.cpp */; };
+		742F0B5107F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2507F4887500E4DBBA /* Wm3OpenGLDrawText.cpp */; };
+		742F0B5207F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2607F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp */; };
+		742F0B5307F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2707F4887500E4DBBA /* Wm3OpenGLFogState.cpp */; };
+		742F0B5407F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2807F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp */; };
+		742F0B5607F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2A07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp */; };
+		742F0B5707F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2B07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp */; };
+		742F0B5807F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2C07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp */; };
+		742F0B5907F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2D07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp */; };
+		742F0B5A07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2E07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp */; };
+		742F0B5B07F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 742F0B2F07F4887500E4DBBA /* Wm3OpenGLRenderer.h */; };
+		742F0B5C07F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3007F4887500E4DBBA /* Wm3OpenGLShadeState.cpp */; };
+		742F0B5D07F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3107F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp */; };
+		742F0B5E07F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3207F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp */; };
+		742F0B6307F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2107F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp */; };
+		742F0B6407F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2207F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp */; };
+		742F0B6507F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2307F4887500E4DBBA /* Wm3OpenGLCullState.cpp */; };
+		742F0B6607F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2407F4887500E4DBBA /* Wm3OpenGLDitherState.cpp */; };
+		742F0B6707F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2507F4887500E4DBBA /* Wm3OpenGLDrawText.cpp */; };
+		742F0B6807F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2607F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp */; };
+		742F0B6907F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2707F4887500E4DBBA /* Wm3OpenGLFogState.cpp */; };
+		742F0B6A07F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2807F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp */; };
+		742F0B6C07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2A07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp */; };
+		742F0B6D07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2B07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp */; };
+		742F0B6E07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2C07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp */; };
+		742F0B6F07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2D07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp */; };
+		742F0B7007F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2E07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp */; };
+		742F0B7107F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 742F0B2F07F4887500E4DBBA /* Wm3OpenGLRenderer.h */; };
+		742F0B7207F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3007F4887500E4DBBA /* Wm3OpenGLShadeState.cpp */; };
+		742F0B7307F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3107F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp */; };
+		742F0B7407F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3207F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp */; };
+		742F0B7907F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2107F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp */; };
+		742F0B7A07F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2207F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp */; };
+		742F0B7B07F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2307F4887500E4DBBA /* Wm3OpenGLCullState.cpp */; };
+		742F0B7C07F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2407F4887500E4DBBA /* Wm3OpenGLDitherState.cpp */; };
+		742F0B7D07F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2507F4887500E4DBBA /* Wm3OpenGLDrawText.cpp */; };
+		742F0B7E07F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2607F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp */; };
+		742F0B7F07F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2707F4887500E4DBBA /* Wm3OpenGLFogState.cpp */; };
+		742F0B8007F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2807F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp */; };
+		742F0B8207F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2A07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp */; };
+		742F0B8307F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2B07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp */; };
+		742F0B8407F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2C07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp */; };
+		742F0B8507F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2D07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp */; };
+		742F0B8607F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B2E07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp */; };
+		742F0B8707F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 742F0B2F07F4887500E4DBBA /* Wm3OpenGLRenderer.h */; };
+		742F0B8807F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3007F4887500E4DBBA /* Wm3OpenGLShadeState.cpp */; };
+		742F0B8907F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3107F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp */; };
+		742F0B8A07F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 742F0B3207F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		74D6E86307F34AF400267169 /* WildMagic */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = WildMagic;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		742F0AF907F4874B00E4DBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D6E86507F34AF400267169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 742F0AE207F485FE00E4DBBA;
+			remoteInfo = "Dynamic Debug";
+		};
+		742F0AFB07F4874B00E4DBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D6E86507F34AF400267169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 742F0AE407F4867600E4DBBA;
+			remoteInfo = "Dynamic Release";
+		};
+		742F0B0C07F487AC00E4DBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D6E86507F34AF400267169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D6E8C707F34BED00267169;
+			remoteInfo = "Static SDK";
+		};
+		742F0B0E07F487AC00E4DBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D6E86507F34AF400267169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 742F0AF607F4874500E4DBBA;
+			remoteInfo = "Dynamic SDK";
+		};
+		74D6E8CF07F34C3500267169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D6E86507F34AF400267169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D6E86E07F34B2200267169;
+			remoteInfo = "Static Debug";
+		};
+		74D6E8D107F34C3800267169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D6E86507F34AF400267169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D6E87107F34B7400267169;
+			remoteInfo = "Static Release";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C3BF89A0842D0CE00B65C6D /* Wm3AglExtensions.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Wm3AglExtensions.c; sourceTree = "<group>"; };
+		3C6FBA29083E492C0068AA05 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		3C6FBA2E083E49470068AA05 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		3C6FBA33083E496B0068AA05 /* DrawSprocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawSprocket.framework; path = /System/Library/Frameworks/DrawSprocket.framework; sourceTree = "<absolute>"; };
+		3C9DBB9F083D29AD006BA80C /* Wm3OpenGLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Wm3OpenGLExtensions.h; sourceTree = SOURCE_ROOT; };
+		3C9DBBC1083D3E38006BA80C /* Wm3OpenGLExtensions.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Wm3OpenGLExtensions.c; sourceTree = SOURCE_ROOT; };
+		3CB87C7F0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Wm3OpenGLRendererLIB.h; sourceTree = "<group>"; };
+		3CB87C800966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLRendererPCH.cpp; sourceTree = "<group>"; };
+		3CB87C810966DBA8008F5898 /* Wm3OpenGLRendererPCH.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Wm3OpenGLRendererPCH.h; sourceTree = "<group>"; };
+		3CC36EEC0846BC5C003C3D9C /* libWm3FoundationDebug.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3FoundationDebug.dylib; path = ../../Library/DebugDLL/libWm3FoundationDebug.dylib; sourceTree = SOURCE_ROOT; };
+		3CC36EF00846BC80003C3D9C /* libWm3FoundationRelease.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm3FoundationRelease.dylib; path = ../../Library/ReleaseDLL/libWm3FoundationRelease.dylib; sourceTree = SOURCE_ROOT; };
+		3CCDAAD5083C47FD009E5F14 /* Wm3AglPBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3AglPBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		3CCDAAD6083C47FD009E5F14 /* Wm3AglPBuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Wm3AglPBuffer.h; sourceTree = SOURCE_ROOT; };
+		3CCDAAD7083C47FD009E5F14 /* Wm3AglRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3AglRenderer.cpp; sourceTree = SOURCE_ROOT; };
+		3CCDAAD8083C47FD009E5F14 /* Wm3AglRenderer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Wm3AglRenderer.h; sourceTree = SOURCE_ROOT; };
+		742F0AE307F485FE00E4DBBA /* libWm3AglRendererDebug.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWm3AglRendererDebug.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		742F0AE807F4867600E4DBBA /* libWm3AglRendererRelease.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWm3AglRendererRelease.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		742F0AF707F4874500E4DBBA /* Dynamic SDK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Dynamic SDK"; sourceTree = BUILT_PRODUCTS_DIR; };
+		742F0B0A07F487A700E4DBBA /* Complete SDK */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = "Complete SDK"; sourceTree = BUILT_PRODUCTS_DIR; };
+		742F0B2107F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLAlphaState.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2207F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLBumpMap.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2307F4887500E4DBBA /* Wm3OpenGLCullState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLCullState.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2407F4887500E4DBBA /* Wm3OpenGLDitherState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLDitherState.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2507F4887500E4DBBA /* Wm3OpenGLDrawText.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLDrawText.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2607F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLEnvironmentMap.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2707F4887500E4DBBA /* Wm3OpenGLFogState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLFogState.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2807F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLGlossMap.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2A07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLMaterialState.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2B07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLPlanarReflection.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2C07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLPlanarShadow.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2D07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLProjectedTexture.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2E07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLRenderer.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B2F07F4887500E4DBBA /* Wm3OpenGLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Wm3OpenGLRenderer.h; sourceTree = SOURCE_ROOT; };
+		742F0B3007F4887500E4DBBA /* Wm3OpenGLShadeState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLShadeState.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B3107F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLWireframeState.cpp; sourceTree = SOURCE_ROOT; };
+		742F0B3207F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Wm3OpenGLZBufferState.cpp; sourceTree = SOURCE_ROOT; };
+		74D6E86F07F34B2200267169 /* libWm3AglRendererDebug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWm3AglRendererDebug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D6E87507F34B7400267169 /* libWm3AglRendererRelease.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWm3AglRendererRelease.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D6E8C807F34BED00267169 /* SDK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDK; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		742F0AE107F485FE00E4DBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBA2A083E492C0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBA2F083E49470068AA05 /* AGL.framework in Frameworks */,
+				3C6FBA34083E496B0068AA05 /* DrawSprocket.framework in Frameworks */,
+				3CC36EED0846BC5C003C3D9C /* libWm3FoundationDebug.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742F0AE707F4867600E4DBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBA2B083E492C0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBA30083E49470068AA05 /* AGL.framework in Frameworks */,
+				3C6FBA35083E496B0068AA05 /* DrawSprocket.framework in Frameworks */,
+				3CC36EF10846BC80003C3D9C /* libWm3FoundationRelease.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742F0B0807F487A700E4DBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D6E86D07F34B2200267169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D6E87407F34B7400267169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C6FBA26083E49060068AA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C6FBA33083E496B0068AA05 /* DrawSprocket.framework */,
+				3C6FBA2E083E49470068AA05 /* AGL.framework */,
+				3C6FBA29083E492C0068AA05 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C6FBC08083E69C70068AA05 /* DebugDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3CC36EEC0846BC5C003C3D9C /* libWm3FoundationDebug.dylib */,
+			);
+			name = DebugDLL;
+			sourceTree = "<group>";
+		};
+		3C6FBC0B083E69E20068AA05 /* ReleaseDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3CC36EF00846BC80003C3D9C /* libWm3FoundationRelease.dylib */,
+			);
+			name = ReleaseDLL;
+			sourceTree = "<group>";
+		};
+		742F0B9507F4893900E4DBBA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3C6FBC08083E69C70068AA05 /* DebugDLL */,
+				3C6FBC0B083E69E20068AA05 /* ReleaseDLL */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		74D6E86107F34AF400267169 = {
+			isa = PBXGroup;
+			children = (
+				3CB87C7F0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h */,
+				3CB87C800966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp */,
+				3CB87C810966DBA8008F5898 /* Wm3OpenGLRendererPCH.h */,
+				74D6E87807F34BA900267169 /* Sources */,
+				742F0B9507F4893900E4DBBA /* Libraries */,
+				3C6FBA26083E49060068AA05 /* Frameworks */,
+				74D6E87007F34B2200267169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74D6E87007F34B2200267169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74D6E86F07F34B2200267169 /* libWm3AglRendererDebug.a */,
+				74D6E87507F34B7400267169 /* libWm3AglRendererRelease.a */,
+				74D6E8C807F34BED00267169 /* SDK */,
+				742F0AE307F485FE00E4DBBA /* libWm3AglRendererDebug.dylib */,
+				742F0AE807F4867600E4DBBA /* libWm3AglRendererRelease.dylib */,
+				742F0AF707F4874500E4DBBA /* Dynamic SDK */,
+				742F0B0A07F487A700E4DBBA /* Complete SDK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74D6E87807F34BA900267169 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3C3BF89A0842D0CE00B65C6D /* Wm3AglExtensions.c */,
+				3CCDAAD5083C47FD009E5F14 /* Wm3AglPBuffer.cpp */,
+				3CCDAAD6083C47FD009E5F14 /* Wm3AglPBuffer.h */,
+				3CCDAAD7083C47FD009E5F14 /* Wm3AglRenderer.cpp */,
+				3CCDAAD8083C47FD009E5F14 /* Wm3AglRenderer.h */,
+				742F0B2107F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp */,
+				742F0B2207F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp */,
+				742F0B2307F4887500E4DBBA /* Wm3OpenGLCullState.cpp */,
+				742F0B2407F4887500E4DBBA /* Wm3OpenGLDitherState.cpp */,
+				742F0B2507F4887500E4DBBA /* Wm3OpenGLDrawText.cpp */,
+				742F0B2607F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp */,
+				3C9DBBC1083D3E38006BA80C /* Wm3OpenGLExtensions.c */,
+				3C9DBB9F083D29AD006BA80C /* Wm3OpenGLExtensions.h */,
+				742F0B2707F4887500E4DBBA /* Wm3OpenGLFogState.cpp */,
+				742F0B2807F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp */,
+				742F0B2A07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp */,
+				742F0B2B07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp */,
+				742F0B2C07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp */,
+				742F0B2D07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp */,
+				742F0B2E07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp */,
+				742F0B2F07F4887500E4DBBA /* Wm3OpenGLRenderer.h */,
+				742F0B3007F4887500E4DBBA /* Wm3OpenGLShadeState.cpp */,
+				742F0B3107F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp */,
+				742F0B3207F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		742F0ADF07F485FE00E4DBBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B7107F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */,
+				3CCDAAE5083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */,
+				3CCDAAE7083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */,
+				3C9DBBA2083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */,
+				3CB87C880966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */,
+				3CB87C8A0966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742F0AE507F4867600E4DBBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B8707F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */,
+				3CCDAAEA083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */,
+				3CCDAAEC083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */,
+				3C9DBBA3083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */,
+				3CB87C8B0966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */,
+				3CB87C8D0966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D6E86B07F34B2200267169 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B4507F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */,
+				3CCDAADB083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */,
+				3CCDAADD083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */,
+				3C9DBBA0083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */,
+				3CB87C820966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */,
+				3CB87C840966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D6E87207F34B7400267169 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B5B07F4887500E4DBBA /* Wm3OpenGLRenderer.h in Headers */,
+				3CCDAAE0083C47FD009E5F14 /* Wm3AglPBuffer.h in Headers */,
+				3CCDAAE2083C47FD009E5F14 /* Wm3AglRenderer.h in Headers */,
+				3C9DBBA1083D29AD006BA80C /* Wm3OpenGLExtensions.h in Headers */,
+				3CB87C850966DBA8008F5898 /* Wm3OpenGLRendererLIB.h in Headers */,
+				3CB87C870966DBA8008F5898 /* Wm3OpenGLRendererPCH.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		742F0AE207F485FE00E4DBBA /* Dynamic Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0273B8088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Dynamic Debug" */;
+			buildPhases = (
+				742F0ADF07F485FE00E4DBBA /* Headers */,
+				742F0AE007F485FE00E4DBBA /* Sources */,
+				742F0AE107F485FE00E4DBBA /* Frameworks */,
+				3C9DBB74083D27AA006BA80C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				INSTALL_PATH = "${SRCROOT}/../../Library/DebugDLL";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/DebugDLL";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08000000,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				PRODUCT_NAME = Wm3AglRendererDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Dynamic Debug";
+			productName = "Dynamic Debug";
+			productReference = 742F0AE307F485FE00E4DBBA /* libWm3AglRendererDebug.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		742F0AE407F4867600E4DBBA /* Dynamic Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0273BB088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Dynamic Release" */;
+			buildPhases = (
+				742F0AE507F4867600E4DBBA /* Headers */,
+				742F0AE607F4867600E4DBBA /* Sources */,
+				742F0AE707F4867600E4DBBA /* Frameworks */,
+				3C9DBB77083D27B8006BA80C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				INSTALL_PATH = "${SRCROOT}/../../Library/ReleaseDLL";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/ReleaseDLL";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08000000,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				PRODUCT_NAME = Wm3AglRendererRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Dynamic Release";
+			productName = "Dynamic Debug";
+			productReference = 742F0AE807F4867600E4DBBA /* libWm3AglRendererRelease.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		742F0AF607F4874500E4DBBA /* Dynamic SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0273BE088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Dynamic SDK" */;
+			buildPhases = (
+				742F0AFF07F4877000E4DBBA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = "Dynamic SDK";
+			};
+			dependencies = (
+				742F0AFA07F4874B00E4DBBA /* PBXTargetDependency */,
+				742F0AFC07F4874B00E4DBBA /* PBXTargetDependency */,
+			);
+			name = "Dynamic SDK";
+			productName = "Dynamic SDK";
+			productReference = 742F0AF707F4874500E4DBBA /* Dynamic SDK */;
+			productType = "com.apple.product-type.tool";
+		};
+		742F0B0907F487A700E4DBBA /* Complete SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0273C1088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Complete SDK" */;
+			buildPhases = (
+				742F0B0807F487A700E4DBBA /* Frameworks */,
+				742F0B1207F487D200E4DBBA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = "Complete SDK";
+			};
+			dependencies = (
+				742F0B0D07F487AC00E4DBBA /* PBXTargetDependency */,
+				742F0B0F07F487AC00E4DBBA /* PBXTargetDependency */,
+			);
+			name = "Complete SDK";
+			productName = "Complete SDK";
+			productReference = 742F0B0A07F487A700E4DBBA /* Complete SDK */;
+			productType = "com.apple.product-type.tool";
+		};
+		74D6E86E07F34B2200267169 /* Static Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0273AF088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Static Debug" */;
+			buildPhases = (
+				74D6E86B07F34B2200267169 /* Headers */,
+				74D6E86C07F34B2200267169 /* Sources */,
+				74D6E86D07F34B2200267169 /* Frameworks */,
+				3C9DBB6A083D2765006BA80C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = Wm3AglRendererDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Static Debug";
+			productName = "Static Debug";
+			productReference = 74D6E86F07F34B2200267169 /* libWm3AglRendererDebug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		74D6E87107F34B7400267169 /* Static Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0273B2088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Static Release" */;
+			buildPhases = (
+				74D6E87207F34B7400267169 /* Headers */,
+				74D6E87307F34B7400267169 /* Sources */,
+				74D6E87407F34B7400267169 /* Frameworks */,
+				3C9DBB71083D2786006BA80C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = Wm3AglRendererRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Static Release";
+			productName = "Static Debug";
+			productReference = 74D6E87507F34B7400267169 /* libWm3AglRendererRelease.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		74D6E8C707F34BED00267169 /* Static SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0273B5088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Static SDK" */;
+			buildPhases = (
+				74D6E8CC07F34C2000267169 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = SDK;
+			};
+			dependencies = (
+				74D6E8D007F34C3500267169 /* PBXTargetDependency */,
+				74D6E8D207F34C3800267169 /* PBXTargetDependency */,
+			);
+			name = "Static SDK";
+			productName = SDK;
+			productReference = 74D6E8C807F34BED00267169 /* SDK */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74D6E86507F34AF400267169 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3C0273C4088FE76A00A93309 /* Build configuration list for PBXProject "AglRenderer" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				74D6E86307F34AF400267169 /* WildMagic */,
+			);
+			hasScannedForEncodings = 0;
+			mainGroup = 74D6E86107F34AF400267169;
+			productRefGroup = 74D6E87007F34B2200267169 /* Products */;
+			projectDirPath = "";
+			targets = (
+				742F0B0907F487A700E4DBBA /* Complete SDK */,
+				74D6E8C707F34BED00267169 /* Static SDK */,
+				742F0AF607F4874500E4DBBA /* Dynamic SDK */,
+				74D6E86E07F34B2200267169 /* Static Debug */,
+				74D6E87107F34B7400267169 /* Static Release */,
+				742F0AE207F485FE00E4DBBA /* Dynamic Debug */,
+				742F0AE407F4867600E4DBBA /* Dynamic Release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C9DBB6A083D2765006BA80C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./CopySdkStaticDebug.mac.sh;
+		};
+		3C9DBB71083D2786006BA80C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./CopySdkStaticRelease.mac.sh;
+		};
+		3C9DBB74083D27AA006BA80C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./CopySdkDynamicDebug.mac.sh;
+		};
+		3C9DBB77083D27B8006BA80C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./CopySdkDynamicRelease.mac.sh;
+		};
+		742F0AFF07F4877000E4DBBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		742F0B1207F487D200E4DBBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		74D6E8CC07F34C2000267169 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		742F0AE007F485FE00E4DBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B6307F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */,
+				742F0B6407F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */,
+				742F0B6507F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */,
+				742F0B6607F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */,
+				742F0B6707F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */,
+				742F0B6807F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */,
+				742F0B6907F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */,
+				742F0B6A07F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */,
+				742F0B6C07F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */,
+				742F0B6D07F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */,
+				742F0B6E07F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */,
+				742F0B6F07F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */,
+				742F0B7007F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */,
+				742F0B7207F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */,
+				742F0B7307F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */,
+				742F0B7407F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */,
+				3CCDAAE4083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */,
+				3CCDAAE6083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */,
+				3C9DBBC7083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */,
+				3C3BF89B0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */,
+				3CB87C890966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742F0AE607F4867600E4DBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B7907F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */,
+				742F0B7A07F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */,
+				742F0B7B07F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */,
+				742F0B7C07F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */,
+				742F0B7D07F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */,
+				742F0B7E07F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */,
+				742F0B7F07F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */,
+				742F0B8007F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */,
+				742F0B8207F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */,
+				742F0B8307F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */,
+				742F0B8407F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */,
+				742F0B8507F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */,
+				742F0B8607F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */,
+				742F0B8807F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */,
+				742F0B8907F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */,
+				742F0B8A07F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */,
+				3CCDAAE9083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */,
+				3CCDAAEB083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */,
+				3C9DBBC9083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */,
+				3C3BF89C0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */,
+				3CB87C8C0966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D6E86C07F34B2200267169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B3707F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */,
+				742F0B3807F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */,
+				742F0B3907F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */,
+				742F0B3A07F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */,
+				742F0B3B07F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */,
+				742F0B3C07F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */,
+				742F0B3D07F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */,
+				742F0B3E07F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */,
+				742F0B4007F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */,
+				742F0B4107F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */,
+				742F0B4207F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */,
+				742F0B4307F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */,
+				742F0B4407F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */,
+				742F0B4607F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */,
+				742F0B4707F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */,
+				742F0B4807F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */,
+				3CCDAADA083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */,
+				3CCDAADC083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */,
+				3C9DBBC3083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */,
+				3C3BF89E0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */,
+				3CB87C830966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D6E87307F34B7400267169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742F0B4D07F4887500E4DBBA /* Wm3OpenGLAlphaState.cpp in Sources */,
+				742F0B4E07F4887500E4DBBA /* Wm3OpenGLBumpMap.cpp in Sources */,
+				742F0B4F07F4887500E4DBBA /* Wm3OpenGLCullState.cpp in Sources */,
+				742F0B5007F4887500E4DBBA /* Wm3OpenGLDitherState.cpp in Sources */,
+				742F0B5107F4887500E4DBBA /* Wm3OpenGLDrawText.cpp in Sources */,
+				742F0B5207F4887500E4DBBA /* Wm3OpenGLEnvironmentMap.cpp in Sources */,
+				742F0B5307F4887500E4DBBA /* Wm3OpenGLFogState.cpp in Sources */,
+				742F0B5407F4887500E4DBBA /* Wm3OpenGLGlossMap.cpp in Sources */,
+				742F0B5607F4887500E4DBBA /* Wm3OpenGLMaterialState.cpp in Sources */,
+				742F0B5707F4887500E4DBBA /* Wm3OpenGLPlanarReflection.cpp in Sources */,
+				742F0B5807F4887500E4DBBA /* Wm3OpenGLPlanarShadow.cpp in Sources */,
+				742F0B5907F4887500E4DBBA /* Wm3OpenGLProjectedTexture.cpp in Sources */,
+				742F0B5A07F4887500E4DBBA /* Wm3OpenGLRenderer.cpp in Sources */,
+				742F0B5C07F4887500E4DBBA /* Wm3OpenGLShadeState.cpp in Sources */,
+				742F0B5D07F4887500E4DBBA /* Wm3OpenGLWireframeState.cpp in Sources */,
+				742F0B5E07F4887500E4DBBA /* Wm3OpenGLZBufferState.cpp in Sources */,
+				3CCDAADF083C47FD009E5F14 /* Wm3AglPBuffer.cpp in Sources */,
+				3CCDAAE1083C47FD009E5F14 /* Wm3AglRenderer.cpp in Sources */,
+				3C9DBBC5083D3E38006BA80C /* Wm3OpenGLExtensions.c in Sources */,
+				3C3BF89D0842D0CE00B65C6D /* Wm3AglExtensions.c in Sources */,
+				3CB87C860966DBA8008F5898 /* Wm3OpenGLRendererPCH.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		742F0AFA07F4874B00E4DBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 742F0AE207F485FE00E4DBBA /* Dynamic Debug */;
+			targetProxy = 742F0AF907F4874B00E4DBBA /* PBXContainerItemProxy */;
+		};
+		742F0AFC07F4874B00E4DBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 742F0AE407F4867600E4DBBA /* Dynamic Release */;
+			targetProxy = 742F0AFB07F4874B00E4DBBA /* PBXContainerItemProxy */;
+		};
+		742F0B0D07F487AC00E4DBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74D6E8C707F34BED00267169 /* Static SDK */;
+			targetProxy = 742F0B0C07F487AC00E4DBBA /* PBXContainerItemProxy */;
+		};
+		742F0B0F07F487AC00E4DBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 742F0AF607F4874500E4DBBA /* Dynamic SDK */;
+			targetProxy = 742F0B0E07F487AC00E4DBBA /* PBXContainerItemProxy */;
+		};
+		74D6E8D007F34C3500267169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74D6E86E07F34B2200267169 /* Static Debug */;
+			targetProxy = 74D6E8CF07F34C3500267169 /* PBXContainerItemProxy */;
+		};
+		74D6E8D207F34C3800267169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74D6E87107F34B7400267169 /* Static Release */;
+			targetProxy = 74D6E8D107F34C3800267169 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C0273B0088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = Wm3AglRendererDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3C0273B1088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = Wm3AglRendererDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C0273B3088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = Wm3AglRendererRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3C0273B4088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = Wm3AglRendererRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C0273B6088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = SDK;
+			};
+			name = WildMagic;
+		};
+		3C0273B7088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = SDK;
+			};
+			name = Default;
+		};
+		3C0273B9088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				INSTALL_PATH = "${SRCROOT}/../../Library/DebugDLL";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/DebugDLL";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08000000,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				PRODUCT_NAME = Wm3AglRendererDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3C0273BA088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				INSTALL_PATH = "${SRCROOT}/../../Library/DebugDLL";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/DebugDLL";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08000000,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				PRODUCT_NAME = Wm3AglRendererDebug;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C0273BC088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				INSTALL_PATH = "${SRCROOT}/../../Library/ReleaseDLL";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/ReleaseDLL";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08000000,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				PRODUCT_NAME = Wm3AglRendererRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = WildMagic;
+		};
+		3C0273BD088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wm3OpenGLRendererPCH.h;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Include";
+				INSTALL_PATH = "${SRCROOT}/../../Library/ReleaseDLL";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../Library/ReleaseDLL";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08000000,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				PRODUCT_NAME = Wm3AglRendererRelease;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C0273BF088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = "Dynamic SDK";
+			};
+			name = WildMagic;
+		};
+		3C0273C0088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = "Dynamic SDK";
+			};
+			name = Default;
+		};
+		3C0273C2088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = "Complete SDK";
+			};
+			name = WildMagic;
+		};
+		3C0273C3088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "${SRCROOT}/../../Library";
+				PRODUCT_NAME = "Complete SDK";
+			};
+			name = Default;
+		};
+		3C0273C5088FE76A00A93309 /* WildMagic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = WildMagic;
+		};
+		3C0273C6088FE76A00A93309 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C0273AF088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Static Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273B0088FE76A00A93309 /* WildMagic */,
+				3C0273B1088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C0273B2088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Static Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273B3088FE76A00A93309 /* WildMagic */,
+				3C0273B4088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C0273B5088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Static SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273B6088FE76A00A93309 /* WildMagic */,
+				3C0273B7088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C0273B8088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Dynamic Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273B9088FE76A00A93309 /* WildMagic */,
+				3C0273BA088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C0273BB088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Dynamic Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273BC088FE76A00A93309 /* WildMagic */,
+				3C0273BD088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C0273BE088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Dynamic SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273BF088FE76A00A93309 /* WildMagic */,
+				3C0273C0088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C0273C1088FE76A00A93309 /* Build configuration list for PBXNativeTarget "Complete SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273C2088FE76A00A93309 /* WildMagic */,
+				3C0273C3088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C0273C4088FE76A00A93309 /* Build configuration list for PBXProject "AglRenderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0273C5088FE76A00A93309 /* WildMagic */,
+				3C0273C6088FE76A00A93309 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74D6E86507F34AF400267169 /* Project object */;
+}

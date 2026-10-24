@@ -1,0 +1,75 @@
+build :
+	cd BallHill               ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BallHill
+	cd BallRubberBand         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BallRubberBand
+	cd BeadSlide              ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BeadSlide
+	cd BouncingBall           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BouncingBall
+	cd BouncingSpheres        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BouncingSpheres
+	cd BouncingTetrahedra     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BouncingTetrahedra
+	cd BSplineCurveExamples   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BSplineCurveExamples
+	cd Cloth                  ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Cloth
+	cd DoublePendulum         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DoublePendulum
+	cd ExtremalQuery          ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtremalQuery
+	cd FlowingSkirt           ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FlowingSkirt
+	cd FoucaultPendulum       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FoucaultPendulum
+	cd FreeFormDeformation    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FreeFormDeformation
+	cd FreeTopFixedTip        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FreeTopFixedTip
+	cd GelatinBlob            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GelatinBlob
+	cd GelatinCube            ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GelatinCube
+	cd HelixTubeSurface       ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=HelixTubeSurface
+	cd IntersectBoxes         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=IntersectBoxes
+	cd IntersectIntervals     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=IntersectIntervals
+	cd IntersectRectangles    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=IntersectRectangles
+	cd KeplerPolarForm        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=KeplerPolarForm
+	cd MassPulleySpringSystem ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MassPulleySpringSystem
+	cd NURBSCurveExample      ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=NURBSCurveExample
+	cd PolygonDistance        ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PolygonDistance
+	cd PolyhedronDistance     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PolyhedronDistance
+	cd Rope                   ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Rope
+	cd RoughPlaneFlatBoard    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneFlatBoard
+	cd RoughPlaneParticle1    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneParticle1
+	cd RoughPlaneParticle2    ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneParticle2
+	cd RoughPlaneSolidBox     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneSolidBox
+	cd RoughPlaneThinRod1     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneThinRod1
+	cd RoughPlaneThinRod2     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneThinRod2
+	cd SimplePendulum         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SimplePendulum
+	cd SimplePendulumFriction ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SimplePendulumFriction
+	cd WaterDropFormation     ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=WaterDropFormation
+	cd WrigglingSnake         ; $(MAKE) CONFIG=$(CONFIG) -f ../makeapp.sgi APP=WrigglingSnake
+
+clean :
+	cd BallHill               ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BallHill
+	cd BallRubberBand         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BallRubberBand
+	cd BeadSlide              ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BeadSlide
+	cd BouncingBall           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BouncingBall
+	cd BouncingSpheres        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BouncingSpheres
+	cd BouncingTetrahedra     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BouncingTetrahedra
+	cd BSplineCurveExamples   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=BSplineCurveExamples
+	cd Cloth                  ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Cloth
+	cd DoublePendulum         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=DoublePendulum
+	cd ExtremalQuery          ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=ExtremalQuery
+	cd FlowingSkirt           ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FlowingSkirt
+	cd FoucaultPendulum       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FoucaultPendulum
+	cd FreeFormDeformation    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FreeFormDeformation
+	cd FreeTopFixedTip        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=FreeTopFixedTip
+	cd GelatinBlob            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GelatinBlob
+	cd GelatinCube            ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=GelatinCube
+	cd HelixTubeSurface       ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=HelixTubeSurface
+	cd IntersectBoxes         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=IntersectBoxes
+	cd IntersectIntervals     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=IntersectIntervals
+	cd IntersectRectangles    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=IntersectRectangles
+	cd KeplerPolarForm        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=KeplerPolarForm
+	cd MassPulleySpringSystem ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=MassPulleySpringSystem
+	cd NURBSCurveExample      ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=NURBSCurveExample
+	cd PolygonDistance        ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PolygonDistance
+	cd PolyhedronDistance     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=PolyhedronDistance
+	cd Rope                   ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=Rope
+	cd RoughPlaneFlatBoard    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneFlatBoard
+	cd RoughPlaneParticle1    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneParticle1
+	cd RoughPlaneParticle2    ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneParticle2
+	cd RoughPlaneSolidBox     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneSolidBox
+	cd RoughPlaneThinRod1     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneThinRod1
+	cd RoughPlaneThinRod2     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=RoughPlaneThinRod2
+	cd SimplePendulum         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SimplePendulum
+	cd SimplePendulumFriction ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=SimplePendulumFriction
+	cd WaterDropFormation     ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=WaterDropFormation
+	cd WrigglingSnake         ; $(MAKE) clean CONFIG=$(CONFIG) -f ../makeapp.sgi APP=WrigglingSnake
